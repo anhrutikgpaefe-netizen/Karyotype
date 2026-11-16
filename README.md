@@ -1,7 +1,7 @@
 # 多物种染色体保守连锁与重排比较
 
 根据基因在染色体上的归属和顺序，比较多个物种的染色体对应关系，寻找保守连锁和重排（融合/裂变）的候选。
-全部脚本只用 Python 标准库（`web/parse_chrom_xlsx.py` 例外，需要 `openpyxl`）。
+当前使用的脚本只用 Python 标准库。
 
 ## 物种
 
@@ -61,8 +61,17 @@ python units/units.py --species NAME=FILE ... --min-genes 30 --min-present 5 --o
 
 以各物种轮流为锚点找保守模块，再列出"两个模块在部分物种同染色体、在其他物种分开"的候选。
 候选之间互相重叠，不等于独立的重排事件；结论以第 2、3 项为准。
-`compare4.py`、`compare8.py`、`compare8_v2.py`–`v4.py` 是更早的版本，输出文件名以 `mamal4_`、`mammal8_`、`mammal8_v2_` 等开头。
 用法见 [compare8_使用说明.txt](compare8_使用说明.txt)。
+
+当前版本是 v5（输出 `mammal8_v5_*`）。根目录还留着第一版（`mammal8_*`）和 v4（`mammal8_v4_*`）的输出，
+因为 `units/unit_events.py`、`units/map_v4.py` 和 `plot_submodule_events.py` 要读它们。
+
+## archive/
+
+已被取代、不再有脚本读取的旧版本，只为保留记录：
+
+- `archive/compare_old/`：`compare4.py`、`compare8.py`、`compare8_v2.py`–`compare8_v4.py`，以及 4 物种版、v2、v3 的输出。
+- `archive/web_xlsx/`：网页第一版用的 Excel 解析脚本 `parse_chrom_xlsx.py`（需要 `openpyxl`）和它的输出。
 
 ### 5. 鱼类及外群（`fish/`）
 
