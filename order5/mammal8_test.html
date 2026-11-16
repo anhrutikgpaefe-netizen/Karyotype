@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>共有衍生断点显著性检验</title><style>body{font-family:-apple-system,'Microsoft YaHei',sans-serif;margin:24px auto;max-width:1000px;padding:0 16px;color:#1f2328;background:#fff;line-height:1.6}h1{font-size:22px}h2{font-size:18px;margin-top:30px;border-bottom:1px solid #d0d7de;padding-bottom:6px}table{border-collapse:collapse;width:100%;font-size:13px;margin:10px 0}th,td{border:1px solid #d0d7de;padding:4px 8px;text-align:left}th{background:#f6f8fa}.num{text-align:right}.note{color:#57606a;font-size:13px}.sig{background:#e6f6e6;font-weight:600}.warn{background:#fff1e5;font-weight:600}@media(prefers-color-scheme:dark){body{background:#0d1117;color:#e6edf3}th{background:#161b22}th,td,h2{border-color:#30363d}.note{color:#8b949e}.sig{background:#14301c}.warn{background:#3a2a14}}</style></head><body>
+<h1>物种两两共有衍生断点的显著性检验</h1>
+<p class="note">数据：order5\mammal8_events.tsv，共 223 个衍生断点事件（每个区段内携带物种集合相同的连接合并为一个事件；极性不确定的连接不计）。物种树：(elephant,(homo,((Hippo,Balae),Equus,((meerkat,cat),Manis))))。零模型：保持每个事件的携带物种数和每个物种的衍生事件总数不变，随机交换 20000 次，统计两个物种同时携带的事件数，单侧 p = 零模型中不小于观测值的比例；BH q 为多重检验校正。零模型不含物种树，因此树上的姐妹物种预期显著，真正需要关注的是<b>不是姐妹却显著</b>的物种对（橙色），以及<b>应该显著却不显著</b>的物种对。</p>
+<h2>物种两两</h2><table><tr><th>物种1</th><th>物种2</th><th class="num">观测事件数</th><th class="num">零模型均值</th><th class="num">p</th><th class="num">BH q</th><th>树上姐妹</th></tr>
+<tr class="sig"><td>Balae</td><td>Hippo</td><td class="num">28</td><td class="num">12.32</td><td class="num">0.0000</td><td class="num">0.0007</td><td>是</td></tr>
+<tr class="sig"><td>meerkat</td><td>cat</td><td class="num">29</td><td class="num">8.14</td><td class="num">0.0000</td><td class="num">0.0007</td><td>是</td></tr>
+<tr class=""><td>cat</td><td>Manis</td><td class="num">13</td><td class="num">9.89</td><td class="num">0.1222</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Equus</td><td>cat</td><td class="num">9</td><td class="num">6.49</td><td class="num">0.1437</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Equus</td><td>Manis</td><td class="num">11</td><td class="num">8.92</td><td class="num">0.2269</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>meerkat</td><td>Manis</td><td class="num">13</td><td class="num">11.37</td><td class="num">0.3120</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Equus</td><td>meerkat</td><td class="num">8</td><td class="num">7.36</td><td class="num">0.4638</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Balae</td><td>Equus</td><td class="num">8</td><td class="num">8.07</td><td class="num">0.5964</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Hippo</td><td>meerkat</td><td class="num">11</td><td class="num">11.16</td><td class="num">0.6083</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Balae</td><td>meerkat</td><td class="num">10</td><td class="num">10.26</td><td class="num">0.6237</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Hippo</td><td>Equus</td><td class="num">8</td><td class="num">8.77</td><td class="num">0.7200</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Balae</td><td>cat</td><td class="num">8</td><td class="num">8.94</td><td class="num">0.7433</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Balae</td><td>Manis</td><td class="num">11</td><td class="num">12.60</td><td class="num">0.8010</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Hippo</td><td>Manis</td><td class="num">12</td><td class="num">13.77</td><td class="num">0.8142</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Hippo</td><td>cat</td><td class="num">8</td><td class="num">9.70</td><td class="num">0.8417</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Hippo</td><td>homo</td><td class="num">5</td><td class="num">9.89</td><td class="num">0.9948</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Balae</td><td>homo</td><td class="num">4</td><td class="num">9.12</td><td class="num">0.9977</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Equus</td><td>homo</td><td class="num">1</td><td class="num">6.59</td><td class="num">0.9998</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Balae</td><td>elephant</td><td class="num">0</td><td class="num">0.00</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Hippo</td><td>elephant</td><td class="num">0</td><td class="num">0.00</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>elephant</td><td>Equus</td><td class="num">0</td><td class="num">0.00</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>elephant</td><td>meerkat</td><td class="num">0</td><td class="num">0.00</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>elephant</td><td>cat</td><td class="num">0</td><td class="num">0.00</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>elephant</td><td>Manis</td><td class="num">0</td><td class="num">0.00</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>elephant</td><td>homo</td><td class="num">0</td><td class="num">0.00</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>meerkat</td><td>homo</td><td class="num">1</td><td class="num">8.25</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>cat</td><td>homo</td><td class="num">0</td><td class="num">7.27</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+<tr class=""><td>Manis</td><td>homo</td><td class="num">1</td><td class="num">10.12</td><td class="num">1.0000</td><td class="num">1.0000</td><td>否</td></tr>
+</table>
+<h2>指定对比</h2><table><tr><th>对比（A:与其中至少一个）</th><th class="num">观测事件数</th><th class="num">零模型均值</th><th class="num">p</th></tr>
+<tr><td>Equus:Balae,Hippo</td><td class="num">11</td><td class="num">12.75</td><td class="num">0.8316</td></tr>
+<tr><td>Equus:meerkat,cat,Manis</td><td class="num">13</td><td class="num">14.39</td><td class="num">0.7804</td></tr>
+<tr><td>Manis:meerkat,cat</td><td class="num">13</td><td class="num">17.07</td><td class="num">0.9575</td></tr>
+<tr><td>Manis:Equus</td><td class="num">11</td><td class="num">8.92</td><td class="num">0.2269</td></tr>
+</table>
+<p class="note">局限：事件按区段内携带集合合并，仍不能保证彼此独立；基于基因名对应；零模型是一个粗糙的重排参照，不是演化模拟。</p></body></html>

@@ -1,0 +1,16 @@
+# NCBI 原始基因表：体积大，可重新下载；解析后的 *.txt 和 *_positions.tsv 已包含分析所需的全部信息
+*_dataset.tsv
+fish/banmasha.tsv
+fish/jingsha.tsv
+fish/xiaoyao.tsv
+fish/zhusha.tsv
+
+# 每个事件的支持基因明细：十几到二十几 MB，可由 compare8_v4.py / compare8_v5.py 重新生成
+*_event_genes.tsv
+
+# Python 与系统临时文件
+__pycache__/
+*.pyc
+~$*
+Thumbs.db
+.claude/

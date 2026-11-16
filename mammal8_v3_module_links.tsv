@@ -1,0 +1,91 @@
+﻿Module_1	Module_2	Same_chr_species	Different_chr_species	Missing_species	Same_n	Different_n	Same_fraction_observed	Variable_link	Gene_set_overlap_smaller
+M00001	M00027	Dugong	Balae,Hippo,elephant,cat,meerkat,inunguis	chimpanzee	1	6	0.1429	1	0.0086
+M00002	M00015	Hippo	Balae,elephant,cat,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00002	M00017	Hippo	Balae,elephant,cat,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00002	M00036	Hippo	Balae,elephant,cat,meerkat,Dugong	chimpanzee,inunguis	1	5	0.1667	1	0.0
+M00003	M00010	Balae	Hippo,elephant,cat,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.2602
+M00003	M00021	cat	Balae,Hippo,elephant,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00003	M00026	Balae,elephant,cat,meerkat,chimpanzee,Dugong,inunguis		Hippo	7	0	1.0	0	0.8242
+M00003	M00032	Hippo	Balae,elephant,chimpanzee,Dugong,inunguis	cat,meerkat	1	5	0.1667	1	0.0248
+M00003	M00033	Hippo	Balae,elephant,chimpanzee,Dugong,inunguis	cat,meerkat	1	5	0.1667	1	0.0
+M00003	M00034	Hippo	Balae,elephant,chimpanzee,Dugong,inunguis	cat,meerkat	1	5	0.1667	1	0.6343
+M00003	M00041	cat	Balae,Hippo,meerkat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.0
+M00005	M00009	Dugong	Balae,Hippo,elephant,cat,meerkat,chimpanzee,inunguis		1	7	0.125	1	0.0
+M00005	M00020	meerkat	Balae,Hippo,elephant,cat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00005	M00030	meerkat	Balae,Hippo,cat,chimpanzee,Dugong,inunguis	elephant	1	6	0.1429	1	0.0
+M00005	M00040	meerkat	Balae,Hippo,cat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.0
+M00006	M00007	meerkat	Balae,Hippo,elephant,cat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0497
+M00006	M00010	cat	Balae,Hippo,elephant,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00006	M00014	cat	Balae,Hippo,elephant,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.1044
+M00007	M00013	Hippo	Balae,elephant,cat,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00008	M00010	chimpanzee	Balae,Hippo,elephant,cat,meerkat,Dugong,inunguis		1	7	0.125	1	0.0
+M00008	M00016	Balae,Hippo,cat,meerkat	elephant,chimpanzee,Dugong,inunguis		4	4	0.5	1	0.0
+M00008	M00019	elephant,Dugong,inunguis	Balae,Hippo,cat,meerkat,chimpanzee		3	5	0.375	1	0.9916
+M00008	M00031	Dugong	Balae,elephant,cat,meerkat,chimpanzee,inunguis	Hippo	1	6	0.1429	1	0.0
+M00009	M00010	meerkat	Balae,Hippo,elephant,cat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00009	M00014	meerkat	Balae,Hippo,elephant,cat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00009	M00018	cat	Balae,Hippo,elephant,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00009	M00022	cat	Balae,Hippo,elephant,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00009	M00027	Balae	Hippo,elephant,cat,meerkat,Dugong,inunguis	chimpanzee	1	6	0.1429	1	0.0
+M00009	M00039	cat	Balae,Hippo,meerkat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.0
+M00010	M00014	cat,meerkat	Balae,Hippo,elephant,chimpanzee,Dugong,inunguis		2	6	0.25	1	0.0
+M00010	M00026	Balae	elephant,cat,meerkat,chimpanzee,Dugong,inunguis	Hippo	1	6	0.1429	1	0.2539
+M00010	M00032	elephant,Dugong,inunguis	Balae,Hippo,chimpanzee	cat,meerkat	3	3	0.5	1	0.0361
+M00010	M00033	elephant,Dugong,inunguis	Balae,Hippo,chimpanzee	cat,meerkat	3	3	0.5	1	0.732
+M00010	M00034	elephant,Dugong,inunguis	Balae,Hippo,chimpanzee	cat,meerkat	3	3	0.5	1	0.0
+M00011	M00020	Hippo	Balae,elephant,cat,meerkat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00011	M00023	cat,meerkat	Balae,Hippo,elephant,chimpanzee,Dugong,inunguis		2	6	0.25	1	0.0
+M00011	M00029	Balae,elephant,cat,meerkat,chimpanzee,Dugong,inunguis		Hippo	7	0	1.0	0	0.9881
+M00011	M00030	Hippo	Balae,cat,meerkat,chimpanzee,Dugong,inunguis	elephant	1	6	0.1429	1	0.0
+M00011	M00037	Balae,cat,meerkat,chimpanzee,Dugong,inunguis		Hippo,elephant	6	0	1.0	0	0.9745
+M00011	M00040	Hippo	Balae,cat,meerkat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.0
+M00012	M00031	elephant	Balae,cat,meerkat,chimpanzee,Dugong,inunguis	Hippo	1	6	0.1429	1	0.0
+M00012	M00035	elephant,cat,meerkat,chimpanzee,Dugong,inunguis		Balae,Hippo	6	0	1.0	0	1.0
+M00013	M00023	chimpanzee	Balae,Hippo,elephant,cat,meerkat,Dugong,inunguis		1	7	0.125	1	0.0
+M00014	M00031	chimpanzee	Balae,elephant,cat,meerkat,Dugong,inunguis	Hippo	1	6	0.1429	1	0.0
+M00014	M00038	chimpanzee	elephant,cat,meerkat,Dugong,inunguis	Balae,Hippo	1	5	0.1667	1	0.0
+M00015	M00017	Balae,Hippo,elephant,cat,meerkat,chimpanzee,Dugong,inunguis			8	0	1.0	0	0.8092
+M00015	M00028	Balae,cat,meerkat	elephant,chimpanzee,Dugong,inunguis	Hippo	3	4	0.4286	1	0.2846
+M00015	M00036	Balae,Hippo,cat,meerkat	elephant,Dugong	chimpanzee,inunguis	4	2	0.6667	1	0.9747
+M00017	M00028	Balae,cat,meerkat	elephant,chimpanzee,Dugong,inunguis	Hippo	3	4	0.4286	1	0.0
+M00017	M00036	Balae,Hippo,cat,meerkat	elephant,Dugong	chimpanzee,inunguis	4	2	0.6667	1	0.7947
+M00018	M00020	Dugong	Balae,Hippo,elephant,cat,meerkat,chimpanzee,inunguis		1	7	0.125	1	0.0
+M00018	M00021	meerkat	Balae,Hippo,elephant,cat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00018	M00022	Balae,Hippo,cat,meerkat,chimpanzee	elephant,Dugong,inunguis		5	3	0.625	1	0.0
+M00018	M00030	Dugong	Balae,Hippo,cat,meerkat,chimpanzee,inunguis	elephant	1	6	0.1429	1	0.0
+M00018	M00039	Balae,Hippo,cat,meerkat,chimpanzee		elephant,Dugong,inunguis	5	0	1.0	0	0.9927
+M00018	M00041	meerkat	Balae,Hippo,cat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.044
+M00019	M00031	Dugong	Balae,elephant,cat,meerkat,chimpanzee,inunguis	Hippo	1	6	0.1429	1	0.0
+M00020	M00030	Balae,Hippo,cat,meerkat,chimpanzee,Dugong,inunguis		elephant	7	0	1.0	0	0.962
+M00020	M00032	Balae,chimpanzee	Hippo,elephant,Dugong,inunguis	cat,meerkat	2	4	0.3333	1	1.0
+M00020	M00033	Balae,chimpanzee	Hippo,elephant,Dugong,inunguis	cat,meerkat	2	4	0.3333	1	0.0
+M00020	M00034	Balae,chimpanzee	Hippo,elephant,Dugong,inunguis	cat,meerkat	2	4	0.3333	1	0.0
+M00020	M00040	Balae,Hippo,cat,meerkat,chimpanzee		elephant,Dugong,inunguis	5	0	1.0	0	0.8017
+M00021	M00022	meerkat	Balae,Hippo,elephant,cat,chimpanzee,Dugong,inunguis		1	7	0.125	1	0.0
+M00021	M00026	cat	Balae,elephant,meerkat,chimpanzee,Dugong,inunguis	Hippo	1	6	0.1429	1	0.9939
+M00021	M00039	meerkat	Balae,Hippo,cat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.9573
+M00021	M00041	Balae,Hippo,cat,meerkat,chimpanzee		elephant,Dugong,inunguis	5	0	1.0	0	0.9939
+M00022	M00038	Dugong,inunguis	elephant,cat,meerkat,chimpanzee	Balae,Hippo	2	4	0.3333	1	0.0
+M00022	M00039	Balae,Hippo,cat,meerkat,chimpanzee		elephant,Dugong,inunguis	5	0	1.0	0	0.7756
+M00022	M00041	meerkat	Balae,Hippo,cat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.0
+M00023	M00029	cat,meerkat	Balae,elephant,chimpanzee,Dugong,inunguis	Hippo	2	5	0.2857	1	0.2468
+M00023	M00037	cat,meerkat	Balae,chimpanzee,Dugong,inunguis	Hippo,elephant	2	4	0.3333	1	1.0
+M00023	M00042	Hippo	Balae,cat,meerkat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.0
+M00026	M00041	cat	Balae,meerkat,chimpanzee	Hippo,elephant,Dugong,inunguis	1	3	0.25	1	0.9628
+M00028	M00036	Balae,elephant,cat,meerkat,Dugong		Hippo,chimpanzee,inunguis	5	0	1.0	0	0.9797
+M00029	M00037	Balae,cat,meerkat,chimpanzee,Dugong,inunguis		Hippo,elephant	6	0	1.0	0	0.9786
+M00030	M00032	Balae,chimpanzee	Hippo,Dugong,inunguis	elephant,cat,meerkat	2	3	0.4	1	1.0
+M00030	M00033	Balae,chimpanzee	Hippo,Dugong,inunguis	elephant,cat,meerkat	2	3	0.4	1	0.0
+M00030	M00034	Balae,chimpanzee	Hippo,Dugong,inunguis	elephant,cat,meerkat	2	3	0.4	1	0.0
+M00030	M00040	Balae,Hippo,cat,meerkat,chimpanzee		elephant,Dugong,inunguis	5	0	1.0	0	0.8548
+M00031	M00035	elephant	cat,meerkat,chimpanzee,Dugong,inunguis	Balae,Hippo	1	5	0.1667	1	0.9724
+M00031	M00038	cat,meerkat,chimpanzee	elephant,Dugong,inunguis	Balae,Hippo	3	3	0.5	1	0.0
+M00031	M00042	Balae,cat,meerkat	chimpanzee	Hippo,elephant,Dugong,inunguis	3	1	0.75	1	0.0
+M00032	M00033	Balae,Hippo,elephant,chimpanzee,Dugong,inunguis		cat,meerkat	6	0	1.0	0	0.7523
+M00032	M00034	Balae,Hippo,elephant,chimpanzee,Dugong,inunguis		cat,meerkat	6	0	1.0	0	0.6676
+M00032	M00040	Balae,chimpanzee	Hippo	elephant,cat,meerkat,Dugong,inunguis	2	1	0.6667	1	0.9982
+M00033	M00034	Balae,Hippo,elephant,chimpanzee,Dugong,inunguis		cat,meerkat	6	0	1.0	0	0.6533
+M00033	M00040	Balae,chimpanzee	Hippo	elephant,cat,meerkat,Dugong,inunguis	2	1	0.6667	1	0.4291
+M00034	M00040	Balae,chimpanzee	Hippo	elephant,cat,meerkat,Dugong,inunguis	2	1	0.6667	1	0.2224
+M00038	M00042	cat,meerkat	chimpanzee	Balae,Hippo,elephant,Dugong,inunguis	2	1	0.6667	1	0.0
+M00039	M00041	meerkat	Balae,Hippo,cat,chimpanzee	elephant,Dugong,inunguis	1	4	0.2	1	0.9324

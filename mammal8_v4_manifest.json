@@ -1,0 +1,47 @@
+{
+  "species": [
+    "Balae",
+    "Hippo",
+    "elephant",
+    "cat",
+    "meerkat",
+    "chimpanzee",
+    "Dugong",
+    "inunguis"
+  ],
+  "files": {
+    "Balae": "Balae.txt",
+    "Hippo": "Hippo.txt",
+    "elephant": "elephant.txt",
+    "cat": "cat.txt",
+    "meerkat": "meerkat.txt",
+    "chimpanzee": "hxx.txt",
+    "Dugong": "Dugong.txt",
+    "inunguis": "inunguis.txt"
+  },
+  "positions": {},
+  "thresholds": {
+    "min_block": 30,
+    "min_species": 5,
+    "min_support": 8,
+    "window": 150,
+    "purity": 0.65,
+    "merge_overlap": 0.6
+  },
+  "module_count": 42,
+  "raw_module_count": 127,
+  "merge_actions": 85,
+  "event_count": 52,
+  "module_link_count": 90,
+  "event_pattern_count": 28,
+  "submodule_count": 139,
+  "eligible_submodule_count": 134,
+  "submodule_event_count": 1396,
+  "warnings": [
+    "Comparisons based on Gene Symbols, not validated orthology.",
+    "Modules are heuristic; cannot prove physical collinearity or event direction.",
+    "Without positions, chromosome-level mapping only.",
+    "Across species chromosome labels are independent; group labels are not homologous identifiers.",
+    "Events are overlapping candidate pairs, not independent historical rearrangements."
+  ]
+}

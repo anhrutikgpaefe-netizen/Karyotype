@@ -1,0 +1,6 @@
+﻿Species	Input	Chromosome_count	Total_symbols	Multichrom_symbols	Symbols_after_filter
+Balae	Balae.txt	24	26149	48	26100
+Hippo	Hippo.txt	19	31090	47	31041
+elephant	elephant.txt	29	29357	46	29307
+cat	cat.txt	20	38561	47	38513
+ALL	unique-or-multicopy		77997	51	77946

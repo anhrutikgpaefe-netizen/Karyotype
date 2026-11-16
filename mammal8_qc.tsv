@@ -1,0 +1,9 @@
+﻿Species	Input	Usable_unique_symbols	Raw_symbols	Duplicate_symbols	Unique_position_loci	Raw_position_symbols	Duplicate_position_symbols	Chromosomes	Analysis_mode
+Balae	Balae.txt	26101	26149	48	0	0	0	24	chromosome_only
+Hippo	Hippo.txt	31043	31090	47	0	0	0	19	chromosome_only
+elephant	elephant.txt	29311	29357	46	0	0	0	29	chromosome_only
+cat	cat.txt	38514	38561	47	0	0	0	20	chromosome_only
+meerkat	meerkat.txt	34335	34380	45	0	0	0	18	chromosome_only
+chimpanzee	hxx.txt	41240	41312	72	0	0	0	26	chromosome_only
+Dugong	Dugong.txt	15930	15930	0	0	0	0	24	chromosome_only
+inunguis	inunguis.txt	16032	16032	0	0	0	0	29	chromosome_only

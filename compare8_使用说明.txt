@@ -1,0 +1,22 @@
+八物种保守连锁分析 compare8.py（Python标准库，无需pip安装）
+
+1. 推荐将程序和8种 *_positions.tsv、8种旧版 .txt 放在同一目录。
+2. 位置文件格式为 parse_ncbi_v2.py 生成的 Chromosome,Symbol,Start,End 等制表符字段。
+3. 示例命令（PowerShell单行）：
+python .\compare8.py --species Balae=Balae.txt --species Hippo=Hippo.txt --species elephant=elephant.txt --species cat=cat.txt --species cow=cow.txt --species human=human.txt --species manatee=manatee.txt --species armadillo=armadillo.txt --positions Balae=Balae_positions.tsv --positions Hippo=Hippo_positions.tsv --positions elephant=elephant_positions.tsv --positions cat=cat_positions.tsv --positions cow=cow_positions.tsv --positions human=human_positions.tsv --positions manatee=manatee_positions.tsv --positions armadillo=armadillo_positions.tsv --min-block 30 --min-species 5 --window 150 --out mammal8
+
+如果后四种尚未下载，可先用已有四种（调整 --min-species 3）；或先只输入8个两列旧文件。无 positions.tsv 时只做染色体归属模块，不会声称检测到物理顺序。
+
+输出：
+*_modules.tsv: 每个候选模块在各物种主对应染色体，基因数量、主导率、原始基因Symbol集合；按不同锚点轮换生成并尝试去重。
+*_events.tsv: 两模块在部分物种同染色体、其他物种不同染色体的组合候选。
+*_qc.tsv: 输入有效Symbol、重复过滤、染色体数等质控。
+*_manifest.json: 参数、输出数量与局限。
+可直接用Excel打开UTF-8 BOM TSV。
+
+重要限制：
+- 不是严格的直系同源鉴定，也没有实现多物种基因组比对。
+- 坐标模式使用固定基因数的局部窗口+主染色体归属筛选，不能保证重排断点精确。
+- 不直接输出祖先融合/裂变方向。多个候选可能对应同一真实事件。
+- 基于物种内部染色体号码不能跨物种比较号码是否相同。
+- 建议在此结果基础上对关键候选进行更精细的锚点顺序和相邻区块验证。

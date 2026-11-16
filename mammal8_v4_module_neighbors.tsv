@@ -1,0 +1,43 @@
+﻿Module_ID	Gene_count	Linked_module_count	Variable_link_count	Linked_module_IDs	Link_profiles
+M00001	1042	1	1	M00027	M00027:1same/6different
+M00002	769	3	3	M00015|M00017|M00036	M00015:1same/7different|M00017:1same/7different|M00036:1same/5different
+M00003	927	7	6	M00026|M00010|M00021|M00032|M00033|M00034|M00041	M00026:7same/0different|M00010:1same/7different|M00021:1same/7different|M00032:1same/5different|M00033:1same/5different|M00034:1same/5different|M00041:1same/4different
+M00004	648	0	0		
+M00005	568	4	4	M00009|M00020|M00030|M00040	M00009:1same/7different|M00020:1same/7different|M00030:1same/6different|M00040:1same/4different
+M00006	830	3	3	M00007|M00010|M00014	M00007:1same/7different|M00010:1same/7different|M00014:1same/7different
+M00007	704	2	2	M00006|M00013	M00006:1same/7different|M00013:1same/7different
+M00008	771	4	4	M00016|M00019|M00010|M00031	M00016:4same/4different|M00019:3same/5different|M00010:1same/7different|M00031:1same/6different
+M00009	487	7	7	M00005|M00010|M00014|M00018|M00022|M00027|M00039	M00005:1same/7different|M00010:1same/7different|M00014:1same/7different|M00018:1same/7different|M00022:1same/7different|M00027:1same/6different|M00039:1same/4different
+M00010	638	9	9	M00032|M00033|M00034|M00014|M00003|M00006|M00008|M00009|M00026	M00032:3same/3different|M00033:3same/3different|M00034:3same/3different|M00014:2same/6different|M00003:1same/7different|M00006:1same/7different|M00008:1same/7different|M00009:1same/7different|M00026:1same/6different
+M00011	589	6	4	M00029|M00037|M00023|M00020|M00030|M00040	M00029:7same/0different|M00037:6same/0different|M00023:2same/6different|M00020:1same/7different|M00030:1same/6different|M00040:1same/4different
+M00012	368	2	1	M00035|M00031	M00035:6same/0different|M00031:1same/6different
+M00013	389	2	2	M00007|M00023	M00007:1same/7different|M00023:1same/7different
+M00014	450	5	5	M00010|M00006|M00009|M00031|M00038	M00010:2same/6different|M00006:1same/7different|M00009:1same/7different|M00031:1same/6different|M00038:1same/5different
+M00015	513	4	3	M00017|M00036|M00028|M00002	M00017:8same/0different|M00036:4same/2different|M00028:3same/4different|M00002:1same/7different
+M00016	411	1	1	M00008	M00008:4same/4different
+M00017	414	4	3	M00015|M00036|M00028|M00002	M00015:8same/0different|M00036:4same/2different|M00028:3same/4different|M00002:1same/7different
+M00018	273	7	6	M00022|M00039|M00009|M00020|M00021|M00030|M00041	M00022:5same/3different|M00039:5same/0different|M00009:1same/7different|M00020:1same/7different|M00021:1same/7different|M00030:1same/6different|M00041:1same/4different
+M00019	239	2	2	M00008|M00031	M00008:3same/5different|M00031:1same/6different
+M00020	237	8	6	M00030|M00040|M00032|M00033|M00034|M00005|M00011|M00018	M00030:7same/0different|M00040:5same/0different|M00032:2same/4different|M00033:2same/4different|M00034:2same/4different|M00005:1same/7different|M00011:1same/7different|M00018:1same/7different
+M00021	164	6	5	M00041|M00003|M00018|M00022|M00026|M00039	M00041:5same/0different|M00003:1same/7different|M00018:1same/7different|M00022:1same/7different|M00026:1same/6different|M00039:1same/4different
+M00022	156	6	5	M00018|M00039|M00038|M00009|M00021|M00041	M00018:5same/3different|M00039:5same/0different|M00038:2same/4different|M00009:1same/7different|M00021:1same/7different|M00041:1same/4different
+M00023	154	5	5	M00011|M00029|M00037|M00013|M00042	M00011:2same/6different|M00029:2same/5different|M00037:2same/4different|M00013:1same/7different|M00042:1same/4different
+M00024	1287	0	0		
+M00025	1015	0	0		
+M00026	1053	4	3	M00003|M00010|M00021|M00041	M00003:7same/0different|M00010:1same/6different|M00021:1same/6different|M00041:1same/3different
+M00027	813	2	2	M00001|M00009	M00001:1same/6different|M00009:1same/6different
+M00028	690	3	2	M00036|M00015|M00017	M00036:5same/0different|M00015:3same/4different|M00017:3same/4different
+M00029	655	3	1	M00011|M00037|M00023	M00011:7same/0different|M00037:6same/0different|M00023:2same/5different
+M00030	365	8	6	M00020|M00040|M00032|M00033|M00034|M00005|M00011|M00018	M00020:7same/0different|M00040:5same/0different|M00032:2same/3different|M00033:2same/3different|M00034:2same/3different|M00005:1same/6different|M00011:1same/6different|M00018:1same/6different
+M00031	217	7	7	M00038|M00042|M00008|M00012|M00014|M00019|M00035	M00038:3same/3different|M00042:3same/1different|M00008:1same/6different|M00012:1same/6different|M00014:1same/6different|M00019:1same/6different|M00035:1same/5different
+M00032	1760	7	5	M00033|M00034|M00010|M00020|M00030|M00040|M00003	M00033:6same/0different|M00034:6same/0different|M00010:3same/3different|M00020:2same/4different|M00030:2same/3different|M00040:2same/1different|M00003:1same/5different
+M00033	1810	7	5	M00032|M00034|M00010|M00020|M00030|M00040|M00003	M00032:6same/0different|M00034:6same/0different|M00010:3same/3different|M00020:2same/4different|M00030:2same/3different|M00040:2same/1different|M00003:1same/5different
+M00034	1765	7	5	M00032|M00033|M00010|M00020|M00030|M00040|M00003	M00032:6same/0different|M00033:6same/0different|M00010:3same/3different|M00020:2same/4different|M00030:2same/3different|M00040:2same/1different|M00003:1same/5different
+M00035	1086	2	1	M00012|M00031	M00012:6same/0different|M00031:1same/5different
+M00036	1041	4	3	M00028|M00015|M00017|M00002	M00028:5same/0different|M00015:4same/2different|M00017:4same/2different|M00002:1same/5different
+M00037	856	3	1	M00011|M00029|M00023	M00011:6same/0different|M00029:6same/0different|M00023:2same/4different
+M00038	107	4	4	M00031|M00022|M00042|M00014	M00031:3same/3different|M00022:2same/4different|M00042:2same/1different|M00014:1same/5different
+M00039	838	5	3	M00018|M00022|M00009|M00021|M00041	M00018:5same/0different|M00022:5same/0different|M00009:1same/4different|M00021:1same/4different|M00041:1same/4different
+M00040	571	7	5	M00020|M00030|M00032|M00033|M00034|M00005|M00011	M00020:5same/0different|M00030:5same/0different|M00032:2same/1different|M00033:2same/1different|M00034:2same/1different|M00005:1same/4different|M00011:1same/4different
+M00041	296	6	5	M00021|M00003|M00018|M00022|M00039|M00026	M00021:5same/0different|M00003:1same/4different|M00018:1same/4different|M00022:1same/4different|M00039:1same/4different|M00026:1same/3different
+M00042	159	3	3	M00031|M00038|M00023	M00031:3same/1different|M00038:2same/1different|M00023:1same/4different

@@ -1,0 +1,43 @@
+﻿Segment	Shared_genes	banmasha_chr	jingsha_chr	zhusha_chr	banmasha-jingsha_blocks	banmasha-jingsha_noise_genes	banmasha-jingsha_orient	banmasha-zhusha_blocks	banmasha-zhusha_noise_genes	banmasha-zhusha_orient	jingsha-zhusha_blocks	jingsha-zhusha_noise_genes	jingsha-zhusha_orient	banmasha-jingsha_collinear	banmasha-zhusha_collinear	jingsha-zhusha_collinear	Pattern	Description	Odd_species	Est_private_breaks_banmasha	Est_private_breaks_jingsha	Est_private_breaks_zhusha
+S01	316	4	5	3	1	0	+	1	0	+	1	0	+	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0
+S02	313	1	1	1	3	0		3	4		5	4		no	no	no	all_differ	三者顺序互不一致		0.0	2.0	2.0
+S03	266	5	4	5	4	8		2	0		5	8		no	no	no	all_differ	三者顺序互不一致		0.0	3.0	1.0
+S04	263	3	3	2	3	0		1	4	-	3	4		no	yes	no	one_differs	jingsha与另两者不一致，另两者(banmasha,zhusha)一致	jingsha	0.0	2.0	0.0
+S05	258	10	8	4	3	4		2	4		4	8		no	no	no	all_differ	三者顺序互不一致		0.0	2.0	1.0
+S06	252	8	10	7	1	4	+	3	0		3	4		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	2.0
+S07	246	7	7	10	1	0	+	2	0		2	0		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	1.0
+S08	239	9	9	11	4	3		1	6	-	5	3		no	yes	no	one_differs	jingsha与另两者不一致，另两者(banmasha,zhusha)一致	jingsha	0	3.5	0.5
+S09	238	6	6	9	1	5	-	1	0	-	1	1	+	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0
+S10	217	2	2	8	1	0	-	4	1		4	1		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	3.0
+S11	203	23	21	40	3	4		2	0		4	4		no	no	no	all_differ	三者顺序互不一致		0.0	2.0	1.0
+S12	200	12	11	15	1	4	+	5	3		5	7		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	4.0
+S13	199	16	15	26	3	4		2	0		3	8		no	no	no	all_differ	三者顺序互不一致		0.5	1.5	0.5
+S14	185	20	20	38	4	0		1	0	+	4	0		no	yes	no	one_differs	jingsha与另两者不一致，另两者(banmasha,zhusha)一致	jingsha	0.0	3.0	0.0
+S15	182	18	18	32	1	2	+	4	0		5	1		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0	0.5	3.5
+S16	170	26	24	17	1	4	-	3	0		3	4		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	2.0
+S17	165	14	13	6	1	0	-	1	0	-	1	0	+	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0
+S18	157	27	26	19	3	1		1	0	+	3	1		no	yes	no	one_differs	jingsha与另两者不一致，另两者(banmasha,zhusha)一致	jingsha	0.0	2.0	0.0
+S19	153	11	16	12	3	10		3	0		2	7		no	no	no	all_differ	三者顺序互不一致		1.5	0.5	0.5
+S20	152	25	22	44	3	6		4	0		6	4		no	no	no	all_differ	三者顺序互不一致		0.0	2.0	3.0
+S21	140	28	31	16	5	0		1	0	+	5	0		no	yes	no	one_differs	jingsha与另两者不一致，另两者(banmasha,zhusha)一致	jingsha	0.0	4.0	0.0
+S22	139	15	14	25	1	0	+	2	0		2	0		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	1.0
+S23	137	29	28	49	3	2		2	1		4	6		no	no	no	all_differ	三者顺序互不一致		0.0	2.0	1.0
+S24	130	17	17	22	4	0		3	3		3	8		no	no	no	all_differ	三者顺序互不一致		1.5	1.5	0.5
+S25	122	22	23	39	1	5	+	3	3		4	4		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0	0.5	2.5
+S26	122	33	33	48	1	0	+	2	0		2	0		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	1.0
+S27	113	19	19	37	1	0	+	4	0		4	0		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	3.0
+S28	109	13	12	20	1	0	-	1	0	+	1	0	-	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0
+S29	106	31	30	42	1	0	-	2	0		2	0		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	1.0
+S30	104	30	29	24	1	0	-	2	0		2	0		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	1.0
+S31	98	1	1	14	1	4	-	1	0	+	2	4		yes	yes	no	ambiguous	阈值边缘：banmasha与其余两者各自一致，但那两者之间不一致		0	0.5	0.5
+S32	94	24	27	27	1	6	-	1	0	-	1	2	+	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0
+S33	74	2	2	41	1	0	-	2	0		2	0		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	1.0
+S34	70	37	34	13	1	0	+	1	0	+	1	0	+	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0
+S35	68	36	36	33	1	0	+	3	0		3	0		yes	no	no	one_differs	zhusha与另两者不一致，另两者(banmasha,jingsha)一致	zhusha	0.0	0.0	2.0
+S36	65	32	32	23	2	0		1	0	-	2	0		no	yes	no	one_differs	jingsha与另两者不一致，另两者(banmasha,zhusha)一致	jingsha	0.0	1.0	0.0
+S37	64	38	37	18	2	0		1	0	+	1	3	+	no	yes	yes	ambiguous	阈值边缘：zhusha与其余两者各自一致，但那两者之间不一致		0.5	0.5	0
+S38	63	21	25	45	3	0		2	0		4	0		no	no	no	all_differ	三者顺序互不一致		0.0	2.0	1.0
+S39	59	39	39	29	1	0	-	1	0	+	1	0	-	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0
+S40	53	40	40	35	2	0		1	0	+	2	0		no	yes	no	one_differs	jingsha与另两者不一致，另两者(banmasha,zhusha)一致	jingsha	0.0	1.0	0.0
+S41	51	35	38	46	2	0		2	2		2	5		no	no	no	all_differ	三者顺序互不一致		0.5	0.5	0.5
+S42	32	X	41	X	1	0	+	1	0	+	1	0	+	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0

@@ -1,0 +1,67 @@
+﻿Segment	Shared_genes	Balae_chr	elephant_chr	Equus_chr	meerkat_chr	homo_chr	Balae-elephant_blocks(noise)	Balae-Equus_blocks(noise)	Balae-meerkat_blocks(noise)	Balae-homo_blocks(noise)	elephant-Equus_blocks(noise)	elephant-meerkat_blocks(noise)	elephant-homo_blocks(noise)	Equus-meerkat_blocks(noise)	Equus-homo_blocks(noise)	meerkat-homo_blocks(noise)	Arrangements	Partition	Pattern	Odd_species	Inference
+S01	701	20	18	11	17	17	5(0)	5(0)	10(0)	17(9)	1(0)	6(0)	13(7)	6(0)	13(7)	17(11)	4	Equus+elephant | Balae | homo | meerkat	multi		最少3次变化；祖先排列=Equus+elephant，其余各自衍生：Balae、homo、meerkat
+S02	521	1	3	2	8	1	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S03	466	X	X	X	X	X	6(0)	6(0)	4(0)	4(0)	4(4)	3(0)	3(0)	3(0)	3(0)	1(0)	4	homo+meerkat | Balae | Equus | elephant	multi		最少3次变化；祖先排列候选：homo+meerkat 或 elephant（无法唯一确定）
+S04	459	3	2	14	6	5	7(5)	6(4)	9(4)	6(4)	3(4)	6(5)	3(4)	5(0)	1(0)	5(4)	4	Equus+homo | Balae | elephant | meerkat	multi		最少3次变化；祖先排列候选：Equus+homo 或 elephant（无法唯一确定）
+S05	448	10	4	6	10	12	1(0)	1(0)	1(0)	4(2)	1(0)	1(0)	4(2)	1(0)	4(2)	4(2)	2	Balae+Equus+elephant+meerkat | homo	one_differs	homo	祖先排列由Balae+Equus+elephant+meerkat保留，homo私有衍生
+S06	417	9	8	4	2	7	7(3)	5(3)	7(3)	8(3)	5(0)	5(0)	4(0)	5(0)	6(0)	8(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S07	404	16	16	1	2	10	3(1)	4(1)	3(2)	6(1)	3(0)	3(1)	5(0)	4(1)	5(2)	6(1)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S08	392	15	24	22	12	20	2(0)	3(0)	2(0)	3(0)	2(0)	1(0)	2(0)	2(0)	3(0)	2(0)	4	elephant+meerkat | Balae | Equus | homo	multi		最少3次变化；祖先排列=elephant+meerkat，其余各自衍生：Balae、Equus、homo
+S09	375	19	11	10	16	19	6(0)	3(0)	4(1)	3(0)	8(0)	8(3)	4(0)	6(1)	5(0)	6(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S10	348	6	9	25	13	9	5(0)	4(0)	3(0)	3(0)	4(0)	5(0)	5(0)	3(0)	3(0)	4(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S11	341	8	7	12	11	11	1(0)	5(0)	1(0)	2(0)	5(0)	1(0)	2(0)	5(0)	5(0)	2(0)	3	Balae+elephant+meerkat | Equus | homo	multi		最少2次变化；祖先排列=Balae+elephant+meerkat，其余各自衍生：Equus、homo
+S12	330	5	5	3	1	4	3(6)	2(4)	2(4)	4(4)	2(1)	2(1)	4(1)	1(0)	3(0)	3(0)	4	Equus+meerkat | Balae | elephant | homo	multi		最少3次变化；祖先排列候选：Equus+meerkat 或 elephant 或 homo（无法唯一确定）
+S13	328	1	3	5	8	1	4(0)	1(0)	1(0)	4(0)	4(0)	4(0)	6(0)	1(0)	4(0)	4(0)	3	Balae+Equus+meerkat | elephant | homo	multi		最少2次变化；祖先排列候选：Balae+Equus+meerkat 或 elephant 或 homo（无法唯一确定）
+S14	308	11	22	16	12	3	2(4)	1(4)	6(4)	6(4)	2(0)	7(0)	7(0)	6(0)	6(0)	9(3)	4	Balae+Equus | elephant | homo | meerkat	multi		最少3次变化；祖先排列候选：Balae+Equus 或 elephant 或 homo（无法唯一确定）
+S15	299	8	7	7	11	11	2(0)	3(0)	4(0)	3(0)	2(0)	3(0)	2(0)	4(0)	3(0)	4(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S16	288	7	6	18	3	2	2(2)	3(0)	3(0)	4(0)	2(2)	2(2)	3(2)	1(0)	2(0)	2(0)	4	Equus+meerkat | Balae | elephant | homo	multi		最少3次变化；祖先排列候选：Equus+meerkat 或 elephant 或 homo（无法唯一确定）
+S17	283	2	10	24	9	14	3(0)	1(0)	1(0)	1(0)	3(0)	3(0)	3(0)	1(0)	1(0)	1(0)	2	Balae+Equus+homo+meerkat | elephant	one_differs	elephant	树上单次变化可解释，但无法判断哪侧为祖先（elephant | Balae+Equus+homo+meerkat 位于根的两侧）
+S18	277	3	3	7	12	19	9(3)	8(3)	9(3)	7(3)	4(0)	5(0)	3(0)	4(0)	2(0)	3(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S19	276	2	13	1	9	15	2(3)	5(3)	4(3)	10(4)	4(0)	3(0)	10(0)	4(0)	11(0)	10(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S20	274	17	14	9	15	8	2(0)	2(0)	1(0)	1(4)	3(0)	2(0)	2(4)	2(0)	2(4)	1(4)	3	Balae+homo+meerkat | Equus | elephant	multi		最少2次变化；祖先排列候选：Balae+homo+meerkat 或 elephant（无法唯一确定）
+S21	272	11	1	20	7	6	3(0)	3(0)	3(0)	3(0)	1(0)	2(0)	1(0)	2(0)	1(0)	2(0)	3	Equus+elephant+homo | Balae | meerkat	multi		最少2次变化；祖先排列=Equus+elephant+homo，其余各自衍生：Balae、meerkat
+S22	271	15	12	13	8	16	1(0)	3(0)	1(0)	5(4)	4(0)	1(0)	5(4)	3(0)	7(4)	5(4)	3	Balae+elephant+meerkat | Equus | homo	multi		最少2次变化；祖先排列=Balae+elephant+meerkat，其余各自衍生：Equus、homo
+S23	258	19	21	3	16	16	2(4)	1(4)	1(4)	3(4)	2(0)	2(0)	4(0)	1(0)	3(0)	3(0)	3	Balae+Equus+meerkat | elephant | homo	multi		最少2次变化；祖先排列候选：Balae+Equus+meerkat 或 elephant 或 homo（无法唯一确定）
+S24	220	13	15	15	4	2	4(0)	3(0)	4(0)	5(0)	2(0)	3(0)	4(0)	2(0)	3(0)	4(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S25	211	12	1	10	7	6	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S26	201	14	11	8	14	18	3(1)	4(0)	2(0)	2(0)	5(5)	4(1)	4(1)	5(0)	5(0)	3(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S27	200	1	3	5	3	1	2(0)	4(0)	3(0)	1(0)	5(0)	3(2)	2(0)	5(0)	4(0)	3(0)	4	Balae+homo | Equus | elephant | meerkat	multi		最少3次变化；祖先排列候选：Balae+homo 或 elephant（无法唯一确定）
+S28	195	4	1	19	5	3	1(0)	1(0)	1(0)	3(4)	1(0)	1(0)	3(4)	1(0)	3(4)	3(4)	2	Balae+Equus+elephant+meerkat | homo	one_differs	homo	祖先排列由Balae+Equus+elephant+meerkat保留，homo私有衍生
+S29	180	6	9	23	13	9	6(0)	5(5)	5(3)	5(3)	7(0)	6(0)	5(2)	5(0)	7(0)	6(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S30	173	10	4	28	10	22	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S31	172	15	12	13	8	7	3(0)	1(1)	1(0)	6(1)	3(1)	3(0)	7(3)	1(1)	6(2)	6(1)	3	Balae+Equus+meerkat | elephant | homo	multi		最少2次变化；祖先排列候选：Balae+Equus+meerkat 或 elephant 或 homo（无法唯一确定）
+S32	169	7	6	6	3	2	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S33	166	3	2	21	6	5	3(0)	1(0)	2(0)	1(0)	3(0)	4(0)	3(0)	2(0)	1(0)	2(0)	3	Balae+Equus+homo | elephant | meerkat	multi		最少2次变化；祖先排列候选：Balae+Equus+homo 或 elephant（无法唯一确定）
+S34	161	14	19	8	14	12	6(0)	6(0)	6(0)	7(2)	1(0)	1(0)	3(0)	1(0)	3(0)	3(0)	3	Equus+elephant+meerkat | Balae | homo	multi		最少2次变化；祖先排列=Equus+elephant+meerkat，其余各自衍生：Balae、homo
+S35	152	18	17	17	4	13	2(0)	1(0)	1(0)	3(0)	2(0)	2(0)	4(0)	1(0)	3(0)	3(0)	3	Balae+Equus+meerkat | elephant | homo	multi		最少2次变化；祖先排列候选：Balae+Equus+meerkat 或 elephant 或 homo（无法唯一确定）
+S36	144	13	12	15	4	2	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S37	128	2	10	1	9	14	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S38	127	8	15	7	11	11	1(0)	1(0)	2(0)	1(0)	1(0)	2(0)	1(0)	2(0)	1(0)	2(0)	2	Balae+Equus+elephant+homo | meerkat	one_differs	meerkat	祖先排列由Balae+Equus+elephant+homo保留，meerkat私有衍生
+S39	124	10	4	28	10	12	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S40	124	2	10	1	9	15	1(0)	1(0)	1(0)	2(0)	1(0)	1(0)	2(0)	1(0)	2(0)	2(0)	2	Balae+Equus+elephant+meerkat | homo	one_differs	homo	祖先排列由Balae+Equus+elephant+meerkat保留，homo私有衍生
+S41	118	14	19	8	14	22	4(5)	4(5)	3(3)	5(14)	3(7)	3(4)	5(13)	4(6)	5(13)	5(11)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S42	116	13	26	15	4	2	1(0)	1(0)	2(0)	1(0)	1(0)	2(0)	1(0)	2(0)	1(0)	2(0)	2	Balae+Equus+elephant+homo | meerkat	one_differs	meerkat	祖先排列由Balae+Equus+elephant+homo保留，meerkat私有衍生
+S43	115	2	4	29	10	10	7(3)	6(2)	7(2)	6(2)	3(0)	5(0)	3(0)	3(0)	1(0)	3(0)	4	Equus+homo | Balae | elephant | meerkat	multi		最少3次变化；祖先排列候选：Equus+homo 或 elephant（无法唯一确定）
+S44	104	12	1	31	7	6	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S45	100	3	3	21	12	19	2(0)	2(0)	2(0)	2(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	2	Equus+elephant+homo+meerkat | Balae	one_differs	Balae	祖先排列由Equus+elephant+homo+meerkat保留，Balae私有衍生
+S46	95	1	25	5	3	1	2(0)	1(0)	3(8)	2(0)	2(0)	3(8)	2(0)	3(8)	2(0)	3(8)	4	Balae+Equus | elephant | homo | meerkat	multi		最少3次变化；祖先排列候选：Balae+Equus 或 elephant 或 homo（无法唯一确定）
+S47	95	5	5	2	1	4	2(0)	2(0)	2(0)	2(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	2	Equus+elephant+homo+meerkat | Balae	one_differs	Balae	祖先排列由Equus+elephant+homo+meerkat保留，Balae私有衍生
+S48	91	18	23	17	4	13	1(0)	1(0)	1(0)	1(2)	1(0)	1(0)	1(2)	1(0)	1(2)	1(2)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S49	81	21	19	27	1	8	4(1)	4(1)	4(1)	4(9)	1(0)	1(0)	2(4)	1(0)	2(4)	2(4)	3	Equus+elephant+meerkat | Balae | homo	multi		最少2次变化；祖先排列=Equus+elephant+meerkat，其余各自衍生：Balae、homo
+S50	77	1	25	30	3	1	2(0)	4(0)	2(0)	3(0)	5(0)	3(0)	3(0)	4(3)	6(0)	4(0)	5	Balae | Equus | elephant | homo | meerkat	all_differ		最少4次变化；祖先排列候选：Balae 或 Equus 或 elephant 或 homo 或 meerkat（无法唯一确定）
+S51	68	4	23	16	5	3	1(0)	1(0)	1(1)	1(0)	1(0)	1(1)	1(0)	1(1)	1(0)	1(1)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S52	67	1	20	5	3	1	2(0)	2(0)	3(0)	2(0)	2(0)	2(0)	1(0)	3(0)	2(0)	2(0)	4	elephant+homo | Balae | Equus | meerkat	multi		最少3次变化；祖先排列=elephant+homo，其余各自衍生：Balae、Equus、meerkat
+S53	67	4	2	26	5	21	1(0)	1(0)	5(0)	1(0)	1(0)	5(0)	1(0)	5(0)	1(0)	5(0)	2	Balae+Equus+elephant+homo | meerkat	one_differs	meerkat	祖先排列由Balae+Equus+elephant+homo保留，meerkat私有衍生
+S54	66	6	19	2	1	8	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S55	62	4	23	19	5	3	2(0)	3(0)	1(0)	1(0)	3(0)	2(0)	2(0)	3(0)	3(0)	1(0)	3	Balae+homo+meerkat | Equus | elephant	multi		最少2次变化；祖先排列候选：Balae+homo+meerkat 或 elephant（无法唯一确定）
+S56	62	5	13	2	1	4	2(0)	2(0)	2(0)	2(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	2	Equus+elephant+homo+meerkat | Balae	one_differs	Balae	祖先排列由Equus+elephant+homo+meerkat保留，Balae私有衍生
+S57	51	11	27	16	5	3	4(0)	4(0)	5(2)	4(0)	1(0)	4(0)	1(0)	4(0)	1(0)	4(0)	3	Equus+elephant+homo | Balae | meerkat	multi		最少2次变化；祖先排列=Equus+elephant+homo，其余各自衍生：Balae、meerkat
+S58	46	4	20	19	5	3	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S59	46	4	20	26	5	21	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S60	43	4	27	16	5	3	2(0)	1(0)	1(0)	2(0)	2(0)	2(0)	3(0)	1(0)	2(0)	2(0)	3	Balae+Equus+meerkat | elephant | homo	multi		最少2次变化；祖先排列候选：Balae+Equus+meerkat 或 elephant 或 homo（无法唯一确定）
+S61	41	1	20	30	3	1	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S62	39	9	22	4	2	7	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S63	38	16	25	1	2	1	1(0)	1(4)	1(0)	1(0)	1(4)	1(0)	1(0)	1(4)	1(4)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S64	33	20	2	11	17	17	1(4)	1(0)	1(0)	2(0)	1(4)	1(4)	1(5)	1(0)	2(0)	2(0)	1	Balae+Equus+elephant+homo+meerkat	ambiguous		阈值边缘：同簇内并非两两共线
+S65	33	4	26	16	5	3	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1(0)	1	Balae+Equus+elephant+homo+meerkat	all_consistent		所有物种顺序一致
+S66	31	16	8	1	2	10	1(2)	2(0)	1(6)	1(0)	1(6)	1(4)	1(6)	1(6)	2(0)	1(6)	1	Balae+Equus+elephant+homo+meerkat	ambiguous		阈值边缘：同簇内并非两两共线

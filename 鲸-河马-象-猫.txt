@@ -1,0 +1,27 @@
+python compare4.py Balae.txt Hippo.txt elephant.txt cat.txt --min-block 30 --out mamal4
+
+python compare3_download.py Balae.txt Hippo.txt cat.txt --min-pair 10 --min-block 30 --out b_h_c3
+
+python compare8.py `
+  --species Balae=Balae.txt `
+  --species Hippo=Hippo.txt `
+  --species elephant=elephant.txt `
+  --species cat=cat.txt `
+  --species meerkat=meerkat.txt `
+  --species chimpanzee=hxx.txt `
+  --species Dugong=Dugong.txt `
+  --species inunguis=inunguis.txt `
+  --min-block 30 `
+  --min-species 5 `
+  --out mammal8
+
+exploited
+
+Monodelphis负鼠
+Macaca猕猴
+Dromiciops智利袋鼠
+Equus马
+Canis狗
+
+homo_dataset.tsv
+

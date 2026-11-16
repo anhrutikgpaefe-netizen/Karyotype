@@ -1,0 +1,42 @@
+﻿三物种	区段	共有基因	不同者	一致的两者	不同者位置	辅助外群检验	推断	不同者私有断点
+banmasha/jingsha/zhusha	S04	263	jingsha	banmasha + zhusha	不同者是内群	Latimeria: 不同者连接0/2，一致者连接1/2, bsnake: 不同者连接0/2，一致者连接0/1, coriacea: 不同者连接0/2，一致者连接0/1, gar: 不同者连接0/1，一致者连接0/0	祖先排列保留（外群zhusha与banmasha一致），jingsha私有衍生	2.0
+banmasha/jingsha/zhusha	S06	252	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/2，一致者连接2/2, bsnake: 不同者连接0/0，一致者连接1/1, coriacea: 不同者连接0/0，一致者连接1/1, gar: 不同者连接0/2，一致者连接1/2	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：外群私有变化	2.0
+banmasha/jingsha/zhusha	S07	246	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/1，一致者连接0/0, bsnake: 不同者连接0/0，一致者连接0/0, coriacea: 不同者连接0/0，一致者连接0/0, gar: 不同者连接0/1，一致者连接0/1	无法区分：姐妹共有衍生 或 外群私有变化	1.0
+banmasha/jingsha/zhusha	S08	239	jingsha	banmasha + zhusha	不同者是内群	Latimeria: 不同者连接0/4，一致者连接2/3, bsnake: 不同者连接1/1，一致者连接0/0, coriacea: 不同者连接1/3，一致者连接0/1, gar: 不同者连接0/0，一致者连接0/0	祖先排列保留（外群zhusha与banmasha一致），jingsha私有衍生	3.5
+banmasha/jingsha/zhusha	S10	217	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接1/3，一致者连接0/3, bsnake: 不同者连接0/0，一致者连接0/0, coriacea: 不同者连接1/3，一致者连接0/3, gar: 不同者连接0/0，一致者连接0/0	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：姐妹共有衍生	3.0
+banmasha/jingsha/zhusha	S12	200	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/4，一致者连接1/4, bsnake: 不同者连接0/0，一致者连接0/0, coriacea: 不同者连接1/4，一致者连接2/3, gar: 不同者连接0/0，一致者连接0/0	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：外群私有变化	4.0
+banmasha/jingsha/zhusha	S14	185	jingsha	banmasha + zhusha	不同者是内群	Latimeria: 不同者连接0/3，一致者连接3/3, bsnake: 不同者连接0/3，一致者连接3/3, coriacea: 不同者连接0/3，一致者连接3/3, gar: 不同者连接0/3，一致者连接3/3	祖先排列保留（外群zhusha与banmasha一致），jingsha私有衍生	3.0
+banmasha/jingsha/zhusha	S15	182	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/3，一致者连接2/3, bsnake: 不同者连接1/3，一致者连接2/3, coriacea: 不同者连接1/3，一致者连接2/3, gar: 不同者连接0/2，一致者连接2/2	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：外群私有变化	3.5
+banmasha/jingsha/zhusha	S16	170	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/2，一致者连接0/2, bsnake: 不同者连接0/2，一致者连接1/1, coriacea: 不同者连接0/2，一致者连接1/1, gar: 不同者连接0/2，一致者连接1/2	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：外群私有变化	2.0
+banmasha/jingsha/zhusha	S18	157	jingsha	banmasha + zhusha	不同者是内群	Latimeria: 不同者连接0/2，一致者连接2/2, bsnake: 不同者连接0/1，一致者连接1/1, coriacea: 不同者连接0/1，一致者连接1/1, gar: 不同者连接0/2，一致者连接0/2	祖先排列保留（外群zhusha与banmasha一致），jingsha私有衍生	2.0
+banmasha/jingsha/zhusha	S21	140	jingsha	banmasha + zhusha	不同者是内群	Latimeria: 不同者连接1/4，一致者连接2/4, bsnake: 不同者连接0/1，一致者连接2/3, coriacea: 不同者连接0/1，一致者连接2/3, gar: 不同者连接0/3，一致者连接1/3	祖先排列保留（外群zhusha与banmasha一致），jingsha私有衍生	4.0
+banmasha/jingsha/zhusha	S22	139	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/0，一致者连接1/1, bsnake: 不同者连接0/0，一致者连接0/0, coriacea: 不同者连接0/0，一致者连接0/0, gar: 不同者连接0/1，一致者连接0/1	无法区分：姐妹共有衍生 或 外群私有变化	1.0
+banmasha/jingsha/zhusha	S25	122	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/1，一致者连接1/2, bsnake: 不同者连接0/1，一致者连接1/1, coriacea: 不同者连接0/1，一致者连接1/1, gar: 不同者连接1/2，一致者连接0/2	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：外群私有变化	2.5
+banmasha/jingsha/zhusha	S26	122	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/1，一致者连接0/1, bsnake: 不同者连接0/1，一致者连接0/0, coriacea: 不同者连接0/1，一致者连接0/0, gar: 不同者连接0/1，一致者连接1/1	无法区分：姐妹共有衍生 或 外群私有变化	1.0
+banmasha/jingsha/zhusha	S27	113	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/3，一致者连接0/2, bsnake: 不同者连接0/3，一致者连接0/2, coriacea: 不同者连接0/3，一致者连接0/2, gar: 不同者连接0/3，一致者连接1/2	无法区分：姐妹共有衍生 或 外群私有变化	3.0
+banmasha/jingsha/zhusha	S29	106	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/1，一致者连接0/0, bsnake: 不同者连接0/1，一致者连接1/1, coriacea: 不同者连接0/1，一致者连接1/1, gar: 不同者连接0/1，一致者连接0/1	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：外群私有变化	1.0
+banmasha/jingsha/zhusha	S30	104	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/1，一致者连接0/1, bsnake: 不同者连接1/1，一致者连接0/0, coriacea: 不同者连接1/1，一致者连接0/1, gar: 不同者连接0/1，一致者连接0/1	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：姐妹共有衍生	1.0
+banmasha/jingsha/zhusha	S33	74	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/1，一致者连接0/1, bsnake: 不同者连接0/0，一致者连接0/0, coriacea: 不同者连接0/1，一致者连接0/1, gar: 不同者连接0/0，一致者连接0/0	无法区分：姐妹共有衍生 或 外群私有变化	1.0
+banmasha/jingsha/zhusha	S35	68	zhusha	banmasha + jingsha	不同者是外群	Latimeria: 不同者连接0/2，一致者连接0/2, bsnake: 不同者连接0/2，一致者连接0/2, coriacea: 不同者连接0/1，一致者连接0/1, gar: 不同者连接0/2，一致者连接0/2	无法区分：姐妹共有衍生 或 外群私有变化	2.0
+banmasha/jingsha/zhusha	S36	65	jingsha	banmasha + zhusha	不同者是内群	Latimeria: 不同者连接0/0，一致者连接0/1, bsnake: 不同者连接0/0，一致者连接0/1, coriacea: 不同者连接0/0，一致者连接0/1, gar: 不同者连接0/0，一致者连接0/1	祖先排列保留（外群zhusha与banmasha一致），jingsha私有衍生	1.0
+banmasha/jingsha/zhusha	S40	53	jingsha	banmasha + zhusha	不同者是内群	Latimeria: 不同者连接0/1，一致者连接1/1, bsnake: 不同者连接0/0，一致者连接1/1, coriacea: 不同者连接0/0，一致者连接1/1, gar: 不同者连接0/1，一致者连接0/1	祖先排列保留（外群zhusha与banmasha一致），jingsha私有衍生	1.0
+bsnake/coriacea/gar	S20	164	gar	bsnake + coriacea	不同者是外群	banmasha: 不同者连接0/4，一致者连接0/3, jingsha: 不同者连接0/2，一致者连接1/3, xiaoyao: 不同者连接0/4，一致者连接2/3, zhusha: 不同者连接0/4，一致者连接2/3	无法区分：姐妹共有衍生 或 外群私有变化；辅助外群检验倾向：外群私有变化	9.0
+bsnake/coriacea/gar	S26	129	coriacea	bsnake + gar	不同者是内群	banmasha: 不同者连接0/3，一致者连接0/4, jingsha: 不同者连接0/1，一致者连接0/2, xiaoyao: 不同者连接0/3，一致者连接0/3, zhusha: 不同者连接0/3，一致者连接0/4	祖先排列保留（外群gar与bsnake一致），coriacea私有衍生	5.0
+bsnake/coriacea/gar	S35	100	coriacea	bsnake + gar	不同者是内群	banmasha: 不同者连接0/2，一致者连接0/2, jingsha: 不同者连接0/0，一致者连接0/0, xiaoyao: 不同者连接0/2，一致者连接1/3, zhusha: 不同者连接0/3，一致者连接1/3	祖先排列保留（外群gar与bsnake一致），coriacea私有衍生	5.5
+bsnake/coriacea/gar	S42	62	bsnake	coriacea + gar	不同者是内群	banmasha: 不同者连接0/0，一致者连接0/0, jingsha: 不同者连接0/0，一致者连接0/0, xiaoyao: 不同者连接0/0，一致者连接0/0, zhusha: 不同者连接0/0，一致者连接0/0	祖先排列保留（外群gar与coriacea一致），bsnake私有衍生	20.0
+bsnake/coriacea/gar	S44	49	coriacea	bsnake + gar	不同者是内群	banmasha: 不同者连接0/1，一致者连接0/0, jingsha: 不同者连接0/0，一致者连接0/0, xiaoyao: 不同者连接0/1，一致者连接0/0, zhusha: 不同者连接0/1，一致者连接0/0	祖先排列保留（外群gar与bsnake一致），coriacea私有衍生	1.0
+bsnake/coriacea/gar	S45	39	gar	bsnake + coriacea	不同者是外群	banmasha: 不同者连接0/3，一致者连接0/3, jingsha: 不同者连接0/3，一致者连接0/3, xiaoyao: 不同者连接0/3，一致者连接0/3, zhusha: 不同者连接0/2，一致者连接0/2	无法区分：姐妹共有衍生 或 外群私有变化	3.0
+bsnake/coriacea/gar	S47	38	coriacea	bsnake + gar	不同者是内群	banmasha: 不同者连接0/0，一致者连接0/0, jingsha: 不同者连接0/0，一致者连接0/0, xiaoyao: 不同者连接0/0，一致者连接0/0, zhusha: 不同者连接0/0，一致者连接0/0	祖先排列保留（外群gar与bsnake一致），coriacea私有衍生	1.0
+coriacea/gar/Latimeria	S32	85	Latimeria	coriacea + gar	不同者是内群	banmasha: 不同者连接1/5，一致者连接0/4, jingsha: 不同者连接0/2，一致者连接0/3, xiaoyao: 不同者连接0/5，一致者连接0/4, zhusha: 不同者连接1/4，一致者连接1/2	祖先排列保留（外群gar与coriacea一致），Latimeria私有衍生	3.5
+coriacea/gar/Latimeria	S33	84	coriacea	gar + Latimeria	不同者是内群	banmasha: 不同者连接0/0，一致者连接0/0, jingsha: 不同者连接0/0，一致者连接0/0, xiaoyao: 不同者连接0/0，一致者连接0/0, zhusha: 不同者连接0/0，一致者连接0/0	祖先排列保留（外群gar与Latimeria一致），coriacea私有衍生	2.0
+coriacea/gar/Latimeria	S35	71	Latimeria	coriacea + gar	不同者是内群	banmasha: 不同者连接0/2，一致者连接0/3, jingsha: 不同者连接0/1，一致者连接0/1, xiaoyao: 不同者连接0/1，一致者连接0/3, zhusha: 不同者连接0/2，一致者连接0/2	祖先排列保留（外群gar与coriacea一致），Latimeria私有衍生	22.0
+coriacea/gar/Latimeria	S42	43	Latimeria	coriacea + gar	不同者是内群	banmasha: 不同者连接0/1，一致者连接0/1, jingsha: 不同者连接1/2，一致者连接0/1, xiaoyao: 不同者连接1/2，一致者连接0/2, zhusha: 不同者连接1/2，一致者连接0/2	祖先排列保留（外群gar与coriacea一致），Latimeria私有衍生；注意：辅助外群检验有矛盾	12.0
+coriacea/gar/Latimeria	S45	30	Latimeria	coriacea + gar	不同者是内群	banmasha: 不同者连接0/0，一致者连接0/0, jingsha: 不同者连接0/0，一致者连接0/0, xiaoyao: 不同者连接0/0，一致者连接0/0, zhusha: 不同者连接0/0，一致者连接0/0	祖先排列保留（外群gar与coriacea一致），Latimeria私有衍生	7.0
+xiaoyao/bsnake/Latimeria	S26	101	xiaoyao	bsnake + Latimeria	不同者是外群	—	无法区分：姐妹共有衍生 或 外群私有变化	3.0
+xiaoyao/bsnake/Latimeria	S30	99	bsnake	xiaoyao + Latimeria	不同者是内群	—	祖先排列保留（外群xiaoyao与Latimeria一致），bsnake私有衍生	3.5
+xiaoyao/bsnake/Latimeria	S36	70	bsnake	xiaoyao + Latimeria	不同者是内群	—	祖先排列保留（外群xiaoyao与Latimeria一致），bsnake私有衍生	3.0
+xiaoyao/bsnake/Latimeria	S41	46	xiaoyao	bsnake + Latimeria	不同者是外群	—	无法区分：姐妹共有衍生 或 外群私有变化	1.0
+xiaoyao/bsnake/Latimeria	S42	45	Latimeria	xiaoyao + bsnake	不同者是内群	—	祖先排列保留（外群xiaoyao与bsnake一致），Latimeria私有衍生	13.5
+xiaoyao/bsnake/Latimeria	S43	42	Latimeria	xiaoyao + bsnake	不同者是内群	—	祖先排列保留（外群xiaoyao与bsnake一致），Latimeria私有衍生	11.5
+xiaoyao/bsnake/Latimeria	S44	38	Latimeria	xiaoyao + bsnake	不同者是内群	—	祖先排列保留（外群xiaoyao与bsnake一致），Latimeria私有衍生	10.0
+xiaoyao/bsnake/Latimeria	S45	30	xiaoyao	bsnake + Latimeria	不同者是外群	—	无法区分：姐妹共有衍生 或 外群私有变化	2.0

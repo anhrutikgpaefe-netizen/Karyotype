@@ -1,0 +1,46 @@
+﻿Segment	Shared_genes	coriacea_chr	gar_chr	Latimeria_chr	coriacea-gar_blocks	coriacea-gar_noise_genes	coriacea-gar_orient	coriacea-Latimeria_blocks	coriacea-Latimeria_noise_genes	coriacea-Latimeria_orient	gar-Latimeria_blocks	gar-Latimeria_noise_genes	gar-Latimeria_orient	coriacea-gar_collinear	coriacea-Latimeria_collinear	gar-Latimeria_collinear	Pattern	Description	Odd_species	Est_private_breaks_coriacea	Est_private_breaks_gar	Est_private_breaks_Latimeria
+S01	384	3	2	3	27	140		18	54		28	148		no	no	no	all_differ	三者顺序互不一致		8.0	18.0	9.0
+S02	360	1	7	7	20	129		19	71		25	114		no	no	no	all_differ	三者顺序互不一致		6.5	12.5	11.5
+S03	327	4	1	1	17	77		2	34		15	90		no	no	no	all_differ	三者顺序互不一致		1.5	14.5	0
+S04	319	2	10	2	24	96		11	26		23	88		no	no	no	all_differ	三者顺序互不一致		5.5	17.5	4.5
+S05	317	5	3	1	17	114		10	22		18	120		no	no	no	all_differ	三者顺序互不一致		4.0	12.0	5.0
+S06	291	2	6	2	18	90		12	30		17	95		no	no	no	all_differ	三者顺序互不一致		6.0	11.0	5.0
+S07	266	6	8	11	16	111		13	38		15	119		no	no	no	all_differ	三者顺序互不一致		6.5	8.5	5.5
+S08	256	8	9	6	14	103		6	48		16	100		no	no	no	all_differ	三者顺序互不一致		1.5	11.5	3.5
+S09	247	1	15	4	20	64		7	47		18	78		no	no	no	all_differ	三者顺序互不一致		4.0	15.0	2.0
+S10	234	11	12	9	13	69		5	29		13	72		no	no	no	all_differ	三者顺序互不一致		2.0	10.0	2.0
+S11	229	7	4	8	14	65		11	32		14	78		no	no	no	all_differ	三者顺序互不一致		5.0	8.0	5.0
+S12	218	12	20	5	12	90		10	63		12	108		no	no	no	all_differ	三者顺序互不一致		4.5	6.5	4.5
+S13	214	10	19	5	13	105		11	27		20	76		no	no	no	all_differ	三者顺序互不一致		1.5	10.5	8.5
+S14	204	3	17	3	12	83		13	54		10	70		no	no	no	all_differ	三者顺序互不一致		7.0	4.0	5.0
+S15	203	10	5	13	10	58		8	20		7	76		no	no	no	all_differ	三者顺序互不一致		5.0	4.0	2.0
+S16	193	1	5	4	15	67		5	35		15	71		no	no	no	all_differ	三者顺序互不一致		2.0	12.0	2.0
+S17	186	15	22	20	13	68		11	13		10	64		no	no	no	all_differ	三者顺序互不一致		6.5	5.5	3.5
+S18	181	9	13	8	9	78		7	38		9	83		no	no	no	all_differ	三者顺序互不一致		3.0	5.0	3.0
+S19	160	6	21	17	9	68		5	21		9	58		no	no	no	all_differ	三者顺序互不一致		2.0	6.0	2.0
+S20	158	13	16	10	7	109		6	33		6	108		no	no	no	all_differ	三者顺序互不一致		3.0	3.0	2.0
+S21	156	7	4	14	8	70		8	32		8	66		no	no	no	all_differ	三者顺序互不一致		3.5	3.5	3.5
+S22	155	17	26	23	8	93		8	29		9	94		no	no	no	all_differ	三者顺序互不一致		3.0	4.0	4.0
+S23	155	8	11	16	9	84		7	15		9	89		no	no	no	all_differ	三者顺序互不一致		3.0	5.0	3.0
+S24	152	9	8	15	9	70		9	13		14	43		no	no	no	all_differ	三者顺序互不一致		1.5	6.5	6.5
+S25	146	16	24	10	6	107		11	24		6	108		no	no	no	all_differ	三者顺序互不一致		5.0	0.0	5.0
+S26	130	18	25	19	10	49		7	29		9	51		no	no	no	all_differ	三者顺序互不一致		3.5	5.5	2.5
+S27	125	14	9	18	6	81		6	10		3	101		no	no	no	all_differ	三者顺序互不一致		4.0	1.0	1.0
+S28	117	25	29	21	3	86		10	13		3	90		no	no	no	all_differ	三者顺序互不一致		4.5	0	4.5
+S29	116	27	28	12	6	52		8	40		6	75		no	no	no	all_differ	三者顺序互不一致		3.5	1.5	3.5
+S30	115	19	11	27	9	60		11	14		8	58		no	no	no	all_differ	三者顺序互不一致		5.5	2.5	4.5
+S31	93	21	5	24	6	52		3	38		5	62		no	no	no	all_differ	三者顺序互不一致		1.5	3.5	0.5
+S32	85	26	2	12	1	74	+	7	27		2	65		yes	no	no	one_differs	Latimeria与另两者不一致，另两者(coriacea,gar)一致	Latimeria	2.5	0	3.5
+S33	84	20	1	28	2	71		4	60		1	78	-	no	no	yes	one_differs	coriacea与另两者不一致，另两者(gar,Latimeria)一致	coriacea	2.0	0	1.0
+S34	77	24	27	6	2	67		6	35		2	62		no	no	no	all_differ	三者顺序互不一致		2.5	0	2.5
+S35	71	23	3	29	1	64	-	4	42		42	0		yes	no	no	one_differs	Latimeria与另两者不一致，另两者(coriacea,gar)一致	Latimeria	0	19.0	22.0
+S36	69	22	23	22	2	54		5	27		2	56		no	no	no	all_differ	三者顺序互不一致		2.0	0	2.0
+S37	59	4	3	1	6	19		5	22		3	42		no	no	no	all_differ	三者顺序互不一致		3.5	1.5	0.5
+S38	59	7	18	26	1	54	-	3	44		1	54	+	yes	no	yes	ambiguous	阈值边缘：gar与其余两者各自一致，但那两者之间不一致		1.0	0	1.0
+S39	56	20	11	6	2	45		5	24		3	39		no	no	no	all_differ	三者顺序互不一致		1.5	0	2.5
+S40	53	23	2	5	31	0		29	0		3	38		no	no	no	all_differ	三者顺序互不一致		28.0	2.0	0.0
+S41	45	1	12	9	1	39	+	1	40	-	27	0		yes	yes	no	ambiguous	阈值边缘：coriacea与其余两者各自一致，但那两者之间不一致		0	13.0	13.0
+S42	43	5	1	1	1	33	-	3	18		23	0		yes	no	no	one_differs	Latimeria与另两者不一致，另两者(coriacea,gar)一致	Latimeria	0	10.0	12.0
+S43	40	1	13	4	4	10		3	9		4	11		no	no	no	all_differ	三者顺序互不一致		1.0	2.0	1.0
+S44	33	28	3	30	1	28	-	1	28	+	1	28	-	yes	yes	yes	all_consistent	三者顺序一致		0.0	0.0	0.0
+S45	30	13	4	6	1	25	-	2	20		14	0		yes	no	no	one_differs	Latimeria与另两者不一致，另两者(coriacea,gar)一致	Latimeria	0	6.0	7.0

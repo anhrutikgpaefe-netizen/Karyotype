@@ -1,0 +1,9 @@
+﻿Species	Input	Usable_unique_symbols	Raw_symbols	Duplicate_symbols	Unique_position_loci	Raw_position_symbols	Duplicate_position_symbols	Chromosomes	Analysis_mode	Chromosomes_before_filter	Chromosomes_dropped
+banmasha	banmasha.txt	9515	9548	0	9515	9548	0	46	coordinate	51	5
+bsnake	bsnake.txt	13917	13917	0	13917	13917	0	19	coordinate	19	0
+coriacea	coriacea.txt	14130	14130	0	14130	14130	0	28	coordinate	28	0
+gar	gar.txt	12869	12869	0	12869	12869	0	29	coordinate	29	0
+jingsha	jingsha.txt	8331	8350	0	8331	8350	0	47	coordinate	50	3
+Latimeria	Latimeria.txt	11305	11305	0	11305	11305	0	30	coordinate	30	0
+xiaoyao	xiaoyao.txt	8798	8875	0	8798	8875	0	40	coordinate	50	10
+zhusha	zhusha.txt	9518	9541	0	9518	9541	0	48	coordinate	52	4

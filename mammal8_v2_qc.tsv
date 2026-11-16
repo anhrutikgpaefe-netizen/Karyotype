@@ -1,0 +1,9 @@
+﻿Species	Input	Usable_unique_symbols	Raw_symbols	Duplicate_symbols	Unique_position_loci	Raw_position_symbols	Duplicate_position_symbols	Chromosomes	Analysis_mode	Chromosomes_before_filter	Chromosomes_dropped
+Balae	Balae.txt	26088	26149	48	0	0	0	23	chromosome_only	24	1
+Hippo	Hippo.txt	31030	31090	47	0	0	0	18	chromosome_only	19	1
+elephant	elephant.txt	29311	29357	46	0	0	0	29	chromosome_only	29	0
+cat	cat.txt	38501	38561	47	0	0	0	19	chromosome_only	20	1
+meerkat	meerkat.txt	34335	34380	45	0	0	0	18	chromosome_only	18	0
+chimpanzee	hxx.txt	41227	41312	72	0	0	0	25	chromosome_only	26	1
+Dugong	Dugong.txt	15930	15930	0	0	0	0	24	chromosome_only	24	0
+inunguis	inunguis.txt	16032	16032	0	0	0	0	29	chromosome_only	29	0

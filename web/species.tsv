@@ -1,0 +1,21 @@
+id	group	中文名	拉丁名	file
+Balae	哺乳类	须鲸	Balaenoptera	Balae.txt
+Hippo	哺乳类	河马	Hippopotamus amphibius	Hippo.txt
+elephant	哺乳类	大象	Loxodonta africana	elephant.txt
+Dugong	哺乳类	儒艮	Dugong dugon	Dugong.txt
+inunguis	哺乳类	海牛	Trichechus inunguis	inunguis.txt
+cat	哺乳类	猫	Felis catus	cat.txt
+meerkat	哺乳类	狐獴	Suricata suricatta	meerkat.txt
+Equus	哺乳类	马	Equus	Equus.txt
+hxx	哺乳类	黑猩猩	Pan troglodytes	hxx.txt
+homo	哺乳类	人	Homo sapiens	order5/pos/homo.txt
+Manis	哺乳类	穿山甲	Manis	order5/pos/Manis.txt
+Megaderma	哺乳类	假吸血蝠	Megaderma	order5/pos/Megaderma.txt
+Latimeria	鱼类及外群	矛尾鱼	Latimeria chalumnae	fish/Latimeria.txt
+coriacea	鱼类及外群	棱皮龟	Dermochelys coriacea	fish/coriacea.txt
+gar	鱼类及外群	雀鳝	Lepisosteus	fish/gar.txt
+banmasha	鱼类及外群	斑马鲨	banmasha	fish/banmasha.txt
+jingsha	鱼类及外群	鲸鲨	jingsha	fish/jingsha.txt
+zhusha	鱼类及外群	zhusha	zhusha	fish/zhusha.txt
+xiaoyao	鱼类及外群	xiaoyao	xiaoyao	fish/xiaoyao.txt
+bsnake	鱼类及外群	bsnake	bsnake	fish/bsnake.txt
