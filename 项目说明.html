@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Karyotype 项目说明</title>
+<style>
+/* 布局：左侧固定目录，右侧单栏正文；颜色取自核型图里常见的深蓝灰与赭石 */
+:root{--bg:#fbfaf7;--fg:#1d2430;--muted:#5d6675;--line:#dcd8cf;--card:#f3f0e9;--ink:#24415e;--accent:#a8501e;--ok:#2e7d4f;--warn:#a8501e;--code:#eae6dc}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181f;--fg:#e4e0d6;--muted:#9aa1ad;--line:#2d3440;--card:#1b212b;--ink:#8db4dc;--accent:#e08a52;--ok:#5fbf86;--warn:#e08a52;--code:#202734;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14181f;--fg:#e4e0d6;--muted:#9aa1ad;--line:#2d3440;--card:#1b212b;--ink:#8db4dc;--accent:#e08a52;--ok:#5fbf86;--warn:#e08a52;--code:#202734;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "Noto Serif SC","Source Han Serif SC","Songti SC",SimSun,Georgia,serif}
+.sans{font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+.layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;max-width:1120px;margin:0 auto;padding:32px max(16px,env(safe-area-inset-right,0px)) 64px max(16px,env(safe-area-inset-left,0px))}
+nav{position:sticky;top:24px;align-self:start;font:14px/1.5 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+nav b{display:block;font-size:12px;letter-spacing:.08em;color:var(--muted);margin-bottom:8px}
+nav a{display:block;color:var(--fg);text-decoration:none;padding:5px 10px;border-left:2px solid var(--line)}
+nav a:hover{border-left-color:var(--accent);color:var(--accent)}
+main{min-width:0}
+header h1{font-size:30px;line-height:1.25;margin:0 0 6px;color:var(--ink);letter-spacing:.01em}
+header p{margin:0 0 6px;color:var(--muted);font-size:15px}
+.status{display:inline-block;margin-top:6px;padding:2px 10px;border:1px solid var(--accent);color:var(--accent);border-radius:3px;font:13px -apple-system,"Microsoft YaHei",sans-serif}
+h2{font-size:21px;color:var(--ink);margin:46px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h3{font-size:16px;margin:22px 0 6px}
+p{margin:8px 0}
+a{color:var(--ink)}
+.sans,table,.cards,.links,.note,.steps,pre{font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:12px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 14px;font-size:14.5px;line-height:1.6}
+.card h3{margin:0 0 4px;font-size:15px;color:var(--ink)}
+.card code{font-size:12.5px}
+.tw{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.55}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--card);font-weight:600}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+code{font:13px/1.5 ui-monospace,Consolas,"Courier New",monospace;background:var(--code);padding:1px 5px;border-radius:3px}
+pre{background:var(--code);padding:12px 14px;border-radius:4px;overflow-x:auto;font:13px/1.6 ui-monospace,Consolas,monospace;margin:10px 0}
+pre code{background:none;padding:0}
+.steps{counter-reset:s;list-style:none;padding:0;margin:10px 0}
+.steps li{counter-increment:s;position:relative;padding:6px 0 6px 40px;font-size:15px;line-height:1.65}
+.steps li::before{content:counter(s);position:absolute;left:0;top:7px;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 13px/26px -apple-system,sans-serif;text-align:center}
+.note{color:var(--muted);font-size:13.5px}
+.warn{border-left:3px solid var(--warn);background:var(--card);padding:10px 14px;margin:14px 0;font-size:14.5px;line-height:1.65}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 16px;margin:10px 0}
+.links a{display:block;padding:8px 12px;border:1px solid var(--line);border-radius:4px;text-decoration:none;font-size:14.5px;line-height:1.5;background:var(--bg)}
+.links a:hover{border-color:var(--accent)}
+.links small{display:block;color:var(--muted);font-size:12.5px}
+.tl td:first-child{white-space:nowrap;font-weight:600;color:var(--ink)}
+.todo li{margin:4px 0}
+ul,ol{padding-left:1.3em}
+li{margin:3px 0}
+@media(max-width:860px){.layout{grid-template-columns:minmax(0,1fr);gap:8px}nav{position:static;display:flex;flex-wrap:wrap;gap:4px 8px;padding-bottom:10px;border-bottom:1px solid var(--line)}nav b{display:none}nav a{border:1px solid var(--line);border-radius:3px;padding:3px 9px}header h1{font-size:25px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav>
+<b>目录</b>
+<a href="#overview">一页回顾</a>
+<a href="#progress">当前进度</a>
+<a href="#features">功能</a>
+<a href="#method">方法流程</a>
+<a href="#history">版本历史</a>
+<a href="#results">主要结果</a>
+<a href="#open">查看结果</a>
+<a href="#limits">局限与下一步</a>
+<a href="#files">目录与用法</a>
+</nav>
+<main>
+<header>
+<h1>Karyotype：多物种染色体保守连锁与重排比较</h1>
+<p class="sans">只用基因在染色体上的归属和顺序，比较多个物种的染色体：哪条对哪条，哪些基因块始终连锁，对应区段内基因顺序是否一致，不一致时是谁变了、是不是几个物种共有。</p>
+<p class="note">GitHub：<a href="https://github.com/anhrutikgpaefe-netizen/Karyotype">anhrutikgpaefe-netizen/Karyotype</a> · 详细文字说明见 <a href="README.md">README.md</a> · 本页内容与 README 对应，结果更新后请同步修改</p>
+<span class="status">探索性研究 · 按基因名对应，不是验证过的直系同源</span>
+</header>
+
+<section id="overview">
+<h2>一页回顾</h2>
+<ul class="sans">
+<li><b>数据</b>：12 种哺乳类、8 种鱼类及外群，另有 3 种鸟（游隼、灰冠鹤、红腿叫鹤）。每个物种一份基因表，由 NCBI 的基因表或 GFF 解析得到。</li>
+<li><b>最稳的发现</b>：基因顺序比较里，只有两对公认的姐妹物种（须鲸与河马、猫与狐獴）显著共有衍生断点；马、穿山甲、蝙蝠、人与其他类群之间没有超出随机的共有断点。</li>
+<li><b>最大的限制</b>：判断“谁发生了变化”需要外群；只有一个外群时，树根两侧的差异在原理上分不清，约 84% 的极性不确定连接属于这一类。</li>
+<li><b>最新进展</b>：鸟类部分，游隼与灰冠鹤已完成；红腿叫鹤现有的组装太碎，在等新版本。</li>
+<li><b>脚本</b>：全部只用 Python 标准库，仓库已用 git 管理并推送到 GitHub，今后的版本更新直接在仓库里做，不再新建 <code>_v2</code> 之类的副本。</li>
+</ul>
+</section>
+
+<section id="progress">
+<h2>当前进度：鸟类分析</h2>
+<div class="warn sans">红腿叫鹤的文件是旧组装 <code>ASM69053v1</code>：12,585 条序列里每条最多 9 个基因，没有染色体，做不了染色体线性分析。你提到的 <code>bCarCri1.pri</code>、<code>bFalPer5.hap1.1</code> 不在电脑上。正在等新版红腿叫鹤的 GFF。</div>
+<div class="tw"><table>
+<tr><th>物种</th><th>文件夹里的文件</th><th>情况</th></tr>
+<tr><td>游隼 Falco peregrinus</td><td><code>bFalPer1.pri</code>（GCF_023634155.1）</td><td>23 条染色体，已提取</td></tr>
+<tr><td>灰冠鹤 Balearica regulorum gibbericeps</td><td><code>bBalReg1.pri</code>（GCF_011004875.1）</td><td>37 条染色体，已提取</td></tr>
+<tr><td>红腿叫鹤 Cariama cristata</td><td><code>ASM69053v1</code>（GCF_000690535.1）</td><td>旧组装，无染色体，不可用</td></tr>
+</table></div>
+<h3>游隼与灰冠鹤的结果（<code>birds/</code>）</h3>
+<ul class="sans">
+<li>共有单拷贝基因 12,553 个，12,476 个落在 35 个对应区段里。</li>
+<li>染色体对应（阈值 20 个基因）：一对一 8 条；游隼一条对应灰冠鹤多条的 8 条（如游隼 1 号对应灰冠鹤 5、7、12、20 号）；游隼多条对应灰冠鹤同一条的 4 条（如游隼 4、6 号都对应灰冠鹤 1 号）。</li>
+<li>区段内基因顺序：35 个区段只有 1 个共线；把窗口放到 40、噪声长度放到 20 后仍有 26 个有重排，结论对参数不敏感。</li>
+<li>只有两个物种，无法判断是哪一个发生了变化，也无法区分融合与分裂。</li>
+</ul>
+<h3>下次接着做</h3>
+<ol class="todo sans">
+<li>拿到新版红腿叫鹤的 GFF 后，先检查是不是染色体水平，再补进来做三物种分析。物种树：灰冠鹤作外群，红腿叫鹤与游隼为姐妹。</li>
+<li>或者先加入鸡作外群：<code>D:\test\12blast\data\GCF_016699485.2_bGalGal1…gff</code>（染色体水平），用游隼、灰冠鹤、鸡做三物种分析，之后再加蜥蜴、龟、蛇等爬行类外群。</li>
+<li>微染色体基因数少，需要把 <code>--min-genes</code> 调低。</li>
+<li><code>birds/</code> 还没有提交到 git，完成后再一起提交。</li>
+</ol>
+</section>
+
+<section id="features">
+<h2>功能</h2>
+<p>项目回答四个由浅入深的问题。</p>
+<div class="cards">
+<div class="card"><h3>1 染色体怎么对应</h3>统计两个物种每对染色体共有的基因数，生成热图、对应列表和明细表。<br><code>web/chrom_pairs.py</code>、<code>web/build_chrom_page.py</code></div>
+<div class="card"><h3>2 哪些基因块始终连锁</h3>按基因在所有物种里的染色体组合划分互不重叠的连锁单元，没有锚点物种。<br><code>units/units.py</code></div>
+<div class="card"><h3>3 区段内基因顺序是否一致</h3>区段内两两检验共线，按物种树推断祖先排列，逐个相邻基因对推断断点，并做显著性检验。<br><code>compare_orderN.py</code>、<code>test_shared_breaks.py</code></div>
+<div class="card"><h3>4 哪些融合或裂变候选可能共有</h3>以各物种为锚点找保守模块，列出事件候选（探索性，候选之间互相重叠）。<br><code>compare8_v5.py</code></div>
+</div>
+<p class="note sans">输入是每个物种一份基因表，输出是 TSV 表格和可以单独打开的 HTML 报告。</p>
+</section>
+
+<section id="method">
+<h2>方法流程：区段内基因顺序比较</h2>
+<ol class="steps">
+<li><b>共有基因</b>：每个物种里只出现在一条染色体、且有坐标的基因；丢弃 <code>LOC</code> 开头的占位名、线粒体和未定位序列。</li>
+<li><b>对应区段</b>：各物种所在染色体组合相同、基因数不少于 30 的一组共有基因算一个区段，区段互不重叠。</li>
+<li><b>共线检验</b>：区段内每对物种按坐标排序比较名次；名次相差不超过 3 算同一块，少于 5 个基因的零星错位当噪声；只剩一块（整段反向也算）即共线。</li>
+<li><b>排列分组</b>：两两共线的物种归为一组，每组是一种排列，按组数分成全部一致、一个不同、两个不同等。</li>
+<li><b>推断祖先排列</b>：两组时看哪一侧在物种树上是一个分支；三组以上按物种树做简约法，求最少变化次数和祖先候选。</li>
+<li><b>断点连接推断</b>：每对相邻基因算一个连接，判断各物种是否保留，在树上分别推断祖先状态，统计衍生断点和共有衍生断点。</li>
+<li><b>显著性检验</b>：同一区段里携带相同衍生状态的物种集合合并为一个事件；保持每个事件的携带物种数和每个物种的事件总数不变，随机交换 20000 次，与随机预期比较（单侧 p，BH 校正）。</li>
+</ol>
+</section>
+
+<section id="history">
+<h2>版本历史</h2>
+<p class="note sans">仓库从 2026-11-16 起用 git 管理，此前靠文件名后缀区分版本。下表按先后顺序整理，脚本的文件时间集中在 2026-10-28 至 10-29，Excel 手工整理从 2026-06 起，日期仅供参考。</p>
+<div class="tw"><table class="tl">
+<tr><th>阶段</th><th>脚本 / 文件</th><th>主要变化</th><th>规模</th></tr>
+<tr><td>手工整理</td><td><code>20260611矛尾鱼.xlsx</code> 等</td><td>在 Excel 里列出“染色体=基因数”的对应表</td><td>6 个物种对</td></tr>
+<tr><td>4 物种</td><td><code>compare4.py</code></td><td>只用染色体归属，筛选保守模块和事件</td><td>4 个物种</td></tr>
+<tr><td>8 物种</td><td><code>compare8.py</code></td><td>扩展到 8 个物种，可选坐标窗口</td><td>33 模块、38 事件</td></tr>
+<tr><td>v2</td><td><code>compare8_v2.py</code></td><td>合并重复模块；鱼类版另有去 <code>LOC</code>、过滤小染色体的参数</td><td>30 模块、34 事件；鱼类 104 模块、587 事件</td></tr>
+<tr><td>v3</td><td><code>compare8_v3.py</code></td><td>模块完整性、模块间连接与邻接、染色体共归属网络、事件分组</td><td>42 模块、52 事件</td></tr>
+<tr><td>v4</td><td><code>compare8_v4.py</code></td><td>每个父模块冻结基因子模块，每个事件保留支持基因</td><td>139 子模块、1396 子模块事件</td></tr>
+<tr><td>v5</td><td><code>compare8_v5.py</code></td><td>近阈值模块合并时放宽纯度</td><td>58 模块、111 事件、2239 子模块事件</td></tr>
+<tr><td>连锁单元</td><td><code>units/units.py</code></td><td>无锚点的联合染色体组合分单元，避免模块重叠；阈值敏感性分析；<code>_e</code> 版加入马</td><td>66 个单元</td></tr>
+<tr><td>基因顺序</td><td><code>compare_order3.py</code> → <code>compare_orderN.py</code></td><td>三物种扩展到 N 个物种和物种树；多分支；断点连接推断；共有断点显著性检验；加入穿山甲、蝙蝠</td><td>4 至 8 个有坐标的物种</td></tr>
+<tr><td>网页</td><td><code>web/chrom_pairs.py</code></td><td>把 Excel 列表改成可交互网页</td><td>20 个物种</td></tr>
+<tr><td>版本管理</td><td>git</td><td>建立仓库，旧版本移入 <code>archive/</code></td><td>—</td></tr>
+<tr><td>鸟类</td><td><code>birds/</code></td><td>从 GFF 提取基因和位置；两物种共线检验；红腿叫鹤待新组装</td><td>游隼、灰冠鹤</td></tr>
+</table></div>
+</section>
+
+<section id="results">
+<h2>主要结果</h2>
+<p class="note sans">下面的数字都来自仓库里的输出文件，均为探索性结果。</p>
+<h3>连锁单元（8 个哺乳类）</h3>
+<ul class="sans">
+<li>66 个单元，共 15,728 个基因，每个单元在 8 个物种里都有对应。</li>
+<li>X 染色体在 8 个物种里整体构成一个单元（599 个基因）。</li>
+<li>25 组阈值参数（<code>--min-genes</code> 10 至 100，<code>--min-present</code> 4 至 8）下，分单元结果与基准的调整兰德指数最低 0.954。</li>
+</ul>
+<h3>基因顺序比较（哺乳类）</h3>
+<div class="tw"><table>
+<tr><th>数据</th><th class="n">区段数</th><th class="n">全部一致</th><th class="n">一个不同</th><th class="n">分两组</th><th class="n">多种排列</th><th class="n">全部互异</th><th class="n">阈值边缘</th></tr>
+<tr><td>7 物种</td><td class="n">71</td><td class="n">16</td><td class="n">14</td><td class="n">2</td><td class="n">34</td><td class="n">3</td><td class="n">2</td></tr>
+<tr><td>8 物种，加穿山甲</td><td class="n">80</td><td class="n">12</td><td class="n">20</td><td class="n">2</td><td class="n">43</td><td class="n">1</td><td class="n">2</td></tr>
+<tr><td>8 物种，加蝙蝠</td><td class="n">87</td><td class="n">18</td><td class="n">17</td><td class="n">3</td><td class="n">44</td><td class="n">3</td><td class="n">2</td></tr>
+</table></div>
+<ul class="sans">
+<li><b>只有两对姐妹物种显著共有衍生断点</b>：须鲸与河马观测 28 个事件，随机预期 12.5（q = 0.0005）；猫与狐獴 28 对 8.8（q = 0.0005）。加入穿山甲、蝙蝠后仍显著。</li>
+<li><b>马、穿山甲、蝙蝠、人与其他类群之间没有超出随机的共有断点</b>。马与鲸或河马共有 11 对随机 14.0，与猫或狐獴共有 9 对 12.1。可能与这些类群分化较快有关，但样本很小，既不能当证据，也不能当反证。</li>
+<li><b>祖先排列常判不出来</b>：7 物种的 53 个有分歧区段中 25 个能确定，18 个仅根处不确定，10 个因其他原因不确定；极性不确定的 87 个连接里 73 个（约 84%）是唯一外群与其余物种不同。改用断点连接推断后，可确定的区段数几乎不变。</li>
+<li>一个 78 个基因的区段里，河马、大象、穿山甲三个物种的断点落在同一个约 5 个基因的范围内，疑似被多次使用的断点。</li>
+</ul>
+<h3>基因顺序比较（鱼类）</h3>
+<ul class="sans">
+<li>三种鲨：42 个区段中全部一致 8、一个不同 21、三者互不一致 11、阈值边缘 2；一个不同里 <code>zhusha</code> 占 14 个、<code>jingsha</code> 7 个。</li>
+<li>跨类群的三物种组合：每组 45 至 48 个区段里有 37 个三者互不一致，顺序大多已打散。</li>
+<li>鱼类模块与事件候选：104 个模块、587 个事件候选。</li>
+</ul>
+</section>
+
+<section id="open">
+<h2>查看结果</h2>
+<p class="note sans">下面的链接是相对路径，从项目文件夹里打开本页时可直接点开。</p>
+<h3>染色体对应</h3>
+<div class="links">
+<a href="web/chromosome_correspondence.html">20 个物种两两染色体对应<small>web/ · 简表、热图、明细表、三物种对照</small></a>
+<a href="birds/bird_chromosome_correspondence.html">游隼与灰冠鹤染色体对应<small>birds/</small></a>
+</div>
+<h3>基因顺序比较</h3>
+<div class="links">
+<a href="order5/mammal7j_report.html">7 物种报告<small>order5/ · 含断点连接推断</small></a>
+<a href="order5/mammal8_report.html">8 物种报告（加穿山甲）<small>order5/</small></a>
+<a href="order5/mammal8bat_report.html">8 物种报告（加蝙蝠）<small>order5/</small></a>
+<a href="order5/shared_events.html">多物种共有的衍生突变<small>order5/ · 三套数据汇总</small></a>
+<a href="order5/mammal8_multigroup.html">两种排列各有多个物种共有的区段<small>order5/ · 穿山甲版</small></a>
+<a href="birds/Falco_Balearica_report.html">游隼与灰冠鹤区段报告<small>birds/ · 35 个区段</small></a>
+</div>
+<h3>显著性检验</h3>
+<div class="links">
+<a href="order5/mammal7j_test.html">7 物种<small>order5/</small></a>
+<a href="order5/mammal8_test.html">8 物种（穿山甲）<small>order5/</small></a>
+<a href="order5/mammal8bat_test.html">8 物种（蝙蝠）<small>order5/</small></a>
+</div>
+<h3>连锁单元与鱼类</h3>
+<div class="links">
+<a href="units/mammal8e_units_plot.html">连锁单元图<small>units/</small></a>
+<a href="units/mammal8e_unit_events_plot.html">单元层面的事件候选<small>units/</small></a>
+<a href="fish/order3/one_differs_report.html">鱼类：三物种中一个不同<small>fish/order3/</small></a>
+<a href="fish/order3/polarize.html">鱼类：近缘与远缘<small>fish/order3/</small></a>
+</div>
+</section>
+
+<section id="limits">
+<h2>局限与下一步</h2>
+<h3>局限</h3>
+<ul class="sans">
+<li>基因的对应只看基因名，不是经过验证的直系同源；物种越远，漏掉和错配的基因越多。</li>
+<li>只使用在一个物种里只出现在一条染色体上的基因名；不同物种的染色体编号互相独立。</li>
+<li>物种树只定了部分关系，马、蝙蝠、穿山甲与两对姐妹物种的关系当作未解析。</li>
+<li>共线和断点判定用固定的名次窗口（3）和噪声长度（5），几十个基因的小区段结论把握有限。</li>
+<li>显著性检验的零模型不含物种树，事件在区段内按携带集合合并，不保证彼此独立。</li>
+<li>鱼类 8 个物种里 5 个物种名未确认；各物种组装和注释版本不同，没有做质量控制。</li>
+</ul>
+<h3>下一步</h3>
+<ol class="sans">
+<li>用 OrthoFinder 或 NCBI 同源基因关系替换基因名对应。</li>
+<li>对每个基因组做组装和注释质量检查，剔除不可靠的断点区域。</li>
+<li>用模拟数据验证方法能否找回真实的共有断点。</li>
+<li>加入更多物种（奇蹄目、翼手目的其他物种，异关节总目或有袋类外群）以解决树根处的不确定。</li>
+<li>补齐黑猩猩等物种的坐标，确认鱼类物种名；与已发表的祖先染色体重建对照。</li>
+</ol>
+</section>
+
+<section id="files">
+<h2>目录与用法</h2>
+<pre><code>.
+├── compare_orderN.py          区段内基因顺序比较（N 个物种）
+├── compare_order3.py          共线检验的底层函数
+├── test_shared_breaks.py      共有衍生断点显著性检验
+├── report_multigroup.py       两种排列各有多个物种共有的区段报告
+├── report_shared_events.py    多物种共有突变报告
+├── compare8_v5.py             模块与事件候选（当前版本）
+├── order5/                    基因顺序比较的输出
+├── units/                     连锁单元及其敏感性分析
+├── web/                       染色体对应网页及生成脚本
+├── fish/                      鱼类及外群
+├── birds/                     鸟类：GFF 提取、两物种比较、对应网页
+└── archive/                   已被取代的旧版本</code></pre>
+<h3>常用命令</h3>
+<pre><code># GFF 转坐标表（NCBI RefSeq GFF3）
+python birds/gff_to_positions.py 文件.gff.gz 物种名 birds/pos
+
+# 染色体对应：Excel 式表格 / 网页
+python web/chrom_pairs.py species.tsv --pair A B --min 20 --out A_B.tsv
+python web/chrom_pairs.py species.tsv pairs.json
+python web/build_chrom_page.py pairs.json out.html
+
+# 三个及以上物种的区段内基因顺序比较，加显著性检验
+python compare_orderN.py --species A=A_positions.tsv --species B=B_positions.tsv --species C=C_positions.tsv \
+    --tree "(C,(A,B))" --out order5/demo
+python test_shared_breaks.py order5/demo --tree "(C,(A,B))" --out order5/demo_test</code></pre>
+<p class="note">物种树用括号写法，同一括号里逗号分隔的多个物种表示未解析的多分支。只有两个有坐标的物种时用 <code>birds/compare_pair.py</code>。</p>
+</section>
+</main>
+</div>
+</body>
+</html>

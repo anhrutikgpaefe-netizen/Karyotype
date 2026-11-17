@@ -1,0 +1,43 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Falco 与 Balearica 的区段内基因顺序</title><style>body{font-family:-apple-system,'Microsoft YaHei',sans-serif;margin:24px auto;max-width:1000px;padding:0 16px;color:#1f2328;background:#fff;line-height:1.6}h1{font-size:22px}h2{font-size:18px;margin-top:28px;border-bottom:1px solid #d0d7de;padding-bottom:6px}table{border-collapse:collapse;width:100%;font-size:13px;margin:10px 0}th,td{border:1px solid #d0d7de;padding:4px 8px;text-align:left}th{background:#f6f8fa}.num{text-align:right}.note{color:#57606a;font-size:13px}.re{background:#fff1e5}.co{background:#e6f6e6}@media(prefers-color-scheme:dark){body{background:#0d1117;color:#e6edf3}th{background:#161b22}th,td,h2{border-color:#30363d}.note{color:#8b949e}.re{background:#3a2a14}.co{background:#14301c}}</style></head><body>
+<h1>Falco 与 Balearica：对应染色体区段内的基因顺序</h1>
+<p class="note">共有单拷贝基因 12553 个；按所在染色体对划分，≥30 个基因的染色体对为一个区段，共 35 个，覆盖 12476 个基因。区段内按坐标排序后检验共线：名次相差超过 3 开始新的一块，少于 5 个基因的零星错位视为噪声；只剩一块即共线（整段反向也算）。只有两个物种，无法判断是哪一个发生了变化。基于基因名对应，非严格直系同源。</p>
+<h2>总览</h2><p>共线 1 个，有重排 34 个。</p>
+<table><tr><th>块数</th><th class="num">区段数</th></tr><tr><td>1</td><td class="num">1</td></tr><tr><td>2</td><td class="num">8</td></tr><tr><td>3</td><td class="num">5</td></tr><tr><td>4</td><td class="num">5</td></tr><tr><td>5</td><td class="num">7</td></tr><tr><td>6</td><td class="num">4</td></tr><tr><td>8</td><td class="num">2</td></tr><tr><td>10</td><td class="num">2</td></tr><tr><td>11</td><td class="num">1</td></tr></table>
+<h2>逐区段结果</h2>
+<table><tr><th>区段</th><th class="num">共有基因</th><th>Falco染色体</th><th>Balearica染色体</th><th class="num">块数</th><th class="num">噪声基因</th><th>各块方向</th><th>结论</th></tr>
+<tr class="re"><td>S01</td><td class="num">896</td><td>6</td><td>1</td><td class="num">8</td><td class="num">5</td><td>+-+---+-</td><td>有重排</td></tr>
+<tr class="re"><td>S02</td><td class="num">821</td><td>4</td><td>1</td><td class="num">5</td><td class="num">1</td><td>+-+-+</td><td>有重排</td></tr>
+<tr class="re"><td>S03</td><td class="num">697</td><td>7</td><td>3</td><td class="num">11</td><td class="num">1</td><td>+---+--++++</td><td>有重排</td></tr>
+<tr class="re"><td>S04</td><td class="num">649</td><td>2</td><td>4</td><td class="num">10</td><td class="num">3</td><td>-++--+---+</td><td>有重排</td></tr>
+<tr class="re"><td>S05</td><td class="num">622</td><td>3</td><td>2</td><td class="num">8</td><td class="num">0</td><td>---+++++</td><td>有重排</td></tr>
+<tr class="re"><td>S06</td><td class="num">615</td><td>Z</td><td>Z</td><td class="num">6</td><td class="num">0</td><td>+-+-++</td><td>有重排</td></tr>
+<tr class="re"><td>S07</td><td class="num">490</td><td>1</td><td>5</td><td class="num">6</td><td class="num">0</td><td>++--+-</td><td>有重排</td></tr>
+<tr class="re"><td>S08</td><td class="num">483</td><td>5</td><td>2</td><td class="num">5</td><td class="num">4</td><td>-+-++</td><td>有重排</td></tr>
+<tr class="re"><td>S09</td><td class="num">439</td><td>10</td><td>8</td><td class="num">3</td><td class="num">1</td><td>+--</td><td>有重排</td></tr>
+<tr class="re"><td>S10</td><td class="num">433</td><td>1</td><td>7</td><td class="num">5</td><td class="num">0</td><td>++--+</td><td>有重排</td></tr>
+<tr class="re"><td>S11</td><td class="num">425</td><td>8</td><td>6</td><td class="num">5</td><td class="num">2</td><td>-+-++</td><td>有重排</td></tr>
+<tr class="co"><td>S12</td><td class="num">376</td><td>12</td><td>9</td><td class="num">1</td><td class="num">4</td><td>+</td><td>共线</td></tr>
+<tr class="re"><td>S13</td><td class="num">350</td><td>1</td><td>12</td><td class="num">4</td><td class="num">1</td><td>+-+-</td><td>有重排</td></tr>
+<tr class="re"><td>S14</td><td class="num">345</td><td>5</td><td>15</td><td class="num">3</td><td class="num">0</td><td>+--</td><td>有重排</td></tr>
+<tr class="re"><td>S15</td><td class="num">320</td><td>11</td><td>3</td><td class="num">2</td><td class="num">0</td><td>-+</td><td>有重排</td></tr>
+<tr class="re"><td>S16</td><td class="num">310</td><td>2</td><td>17</td><td class="num">3</td><td class="num">7</td><td>+++</td><td>有重排</td></tr>
+<tr class="re"><td>S17</td><td class="num">304</td><td>14</td><td>13</td><td class="num">6</td><td class="num">0</td><td>+----+</td><td>有重排</td></tr>
+<tr class="re"><td>S18</td><td class="num">300</td><td>9</td><td>5</td><td class="num">2</td><td class="num">0</td><td>-+</td><td>有重排</td></tr>
+<tr class="re"><td>S19</td><td class="num">290</td><td>5</td><td>10</td><td class="num">5</td><td class="num">4</td><td>--+-+</td><td>有重排</td></tr>
+<tr class="re"><td>S20</td><td class="num">290</td><td>8</td><td>14</td><td class="num">2</td><td class="num">2</td><td>+-</td><td>有重排</td></tr>
+<tr class="re"><td>S21</td><td class="num">285</td><td>9</td><td>16</td><td class="num">2</td><td class="num">1</td><td>+-</td><td>有重排</td></tr>
+<tr class="re"><td>S22</td><td class="num">268</td><td>2</td><td>19</td><td class="num">2</td><td class="num">1</td><td>+-</td><td>有重排</td></tr>
+<tr class="re"><td>S23</td><td class="num">257</td><td>2</td><td>18</td><td class="num">2</td><td class="num">0</td><td>+-</td><td>有重排</td></tr>
+<tr class="re"><td>S24</td><td class="num">253</td><td>1</td><td>20</td><td class="num">4</td><td class="num">0</td><td>+-++</td><td>有重排</td></tr>
+<tr class="re"><td>S25</td><td class="num">247</td><td>5</td><td>26</td><td class="num">10</td><td class="num">5</td><td>--+-++-+--</td><td>有重排</td></tr>
+<tr class="re"><td>S26</td><td class="num">243</td><td>13</td><td>11</td><td class="num">2</td><td class="num">1</td><td>+-</td><td>有重排</td></tr>
+<tr class="re"><td>S27</td><td class="num">225</td><td>18</td><td>24</td><td class="num">4</td><td class="num">1</td><td>--+-</td><td>有重排</td></tr>
+<tr class="re"><td>S28</td><td class="num">218</td><td>16</td><td>25</td><td class="num">4</td><td class="num">1</td><td>-+--</td><td>有重排</td></tr>
+<tr class="re"><td>S29</td><td class="num">205</td><td>3</td><td>22</td><td class="num">4</td><td class="num">4</td><td>+--+</td><td>有重排</td></tr>
+<tr class="re"><td>S30</td><td class="num">203</td><td>3</td><td>21</td><td class="num">3</td><td class="num">0</td><td>-+-</td><td>有重排</td></tr>
+<tr class="re"><td>S31</td><td class="num">166</td><td>19</td><td>28</td><td class="num">3</td><td class="num">0</td><td>-+-</td><td>有重排</td></tr>
+<tr class="re"><td>S32</td><td class="num">148</td><td>15</td><td>23</td><td class="num">5</td><td class="num">2</td><td>+++++</td><td>有重排</td></tr>
+<tr class="re"><td>S33</td><td class="num">148</td><td>17</td><td>27</td><td class="num">5</td><td class="num">5</td><td>+---+</td><td>有重排</td></tr>
+<tr class="re"><td>S34</td><td class="num">103</td><td>19</td><td>29</td><td class="num">6</td><td class="num">0</td><td>--+--+</td><td>有重排</td></tr>
+<tr class="re"><td>S35</td><td class="num">52</td><td>12</td><td>30</td><td class="num">2</td><td class="num">38</td><td>-+</td><td>有重排</td></tr>
+</table></body></html>

@@ -129,6 +129,7 @@ python units/units.py --species NAME=FILE ... --min-genes 30 --min-present 5 --o
 | 基因顺序 | `compare_order3.py` → `compare_orderN.py` | 先做三物种，再扩展到 N 个物种和物种树；加入多分支；断点连接推断；共有断点显著性检验；加入穿山甲、蝙蝠 | 4 至 8 个有坐标的物种 |
 | 网页 | `web/chrom_pairs.py`、`build_chrom_page.py` | 把 Excel 列表改成可交互网页，覆盖 20 个物种的两两对应 | 20 个物种 |
 | 版本管理 | git | 建立仓库，旧版本移入 `archive/` | — |
+| 鸟类 | `birds/` | 从 NCBI GFF 提取基因和位置；两物种共线检验；红腿叫鹤现有组装不可用，等新版 | 游隼、灰冠鹤 |
 
 ## 主要结果
 
@@ -165,6 +166,15 @@ python units/units.py --species NAME=FILE ... --min-genes 30 --min-present 5 --o
 - 三种鲨（`banmasha`、`jingsha`、`zhusha`）：42 个区段中全部一致 8、一个不同 21、三者互不一致 11、阈值边缘 2；"一个不同"里 `zhusha` 占 14 个、`jingsha` 7 个。
 - 跨类群的三物种组合（`bsnake`/`coriacea`/`gar`、`coriacea`/`gar`/`Latimeria`、`xiaoyao`/`bsnake`/`Latimeria`）：每组 45 至 48 个区段里有 37 个三者互不一致，顺序大多已打散。
 - 鱼类模块与事件候选（`fish8_v2`）：104 个模块、587 个事件候选。
+
+### 鸟类（`birds/`，进行中）
+
+- GFF 来自 NCBI RefSeq：游隼 `bFalPer1.pri`（23 条染色体）、灰冠鹤 `bBalReg1.pri`（37 条染色体）、红腿叫鹤 `ASM69053v1`。
+  红腿叫鹤这份是旧组装，没有染色体，12,585 条序列里每条最多 9 个基因，不能用于染色体或基因顺序分析，正在等新版组装。
+- 游隼与灰冠鹤：共有单拷贝基因 12,553 个，12,476 个落在 35 个对应区段里；35 个区段只有 1 个共线，把窗口放到 40、噪声长度放到 20 后仍有 26 个有重排。
+  染色体对应（阈值 20 个基因）：一对一 8 条，游隼一条对应灰冠鹤多条 8 条，游隼多条对应灰冠鹤同一条 4 条。
+  只有两个物种，无法判断是哪一个发生了变化。
+- 用法：`python birds/gff_to_positions.py 文件.gff.gz 物种名 birds/pos`，`python birds/compare_pair.py A=… B=… --out birds/A_B`。
 
 ### 染色体对应表（`web/`）
 
@@ -219,6 +229,8 @@ python units/units.py --species NAME=FILE ... --min-genes 30 --min-present 5 --o
 ├── units/                     连锁单元及其敏感性分析
 ├── web/                       染色体对应关系网页及生成脚本
 ├── fish/                      鱼类及外群的数据、脚本和输出
+├── birds/                     鸟类：GFF 提取、两物种比较、对应网页（进行中）
+├── 项目说明.html              本地概览页（内容对应本 README，含各报告链接）
 └── archive/                   已被取代的旧版本
 ```
 
